@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../asster/css/bootstrap.css">
+		<link rel="shortcut icon" href="../../asster/image/favicon.ico">
+		<title>侧边栏</title>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="sidebar-list guanli" style="background-color:#2058a8;border-top-left-radius: 5px;">
+				<img src="../../asster/icon/asidebutton_daili1.png" alt="">
+			</div>
+			<div class="daili-box">
+				<div class="daili">
+					<div class="daili-list">
+						<img src="../../asster/icon/asidebutton_houtai.png" alt="">
+						<p>卓越的管理后台</p>
+					</div>
+					<div class="daili-list">
+						<img src="../../asster/icon/asidebutton_zhichi.png" alt="">
+						<p>强大的市场支持</p>
+					</div>
+					<div class="daili-list">
+						<img src="../../asster/icon/asidebutton_ziyuan.png" alt="">
+						<p>丰富的培训资源</p>
+					</div>
+					<div class="daili-list">
+						<img src="../../asster/icon/asidebutton_jingli.png" alt="">
+						<p>专属客户经理</p>
+					</div>
+					<a href=""><div class="daili-button">立即申请</div></a>
+				</div>
+			</div>
+			<div class="sidebar-list weixin">
+				<div class="sidebar-img">
+					<img src="../../asster/icon/wechat.png" alt="">
+				</div>
+				公众号
+				<div class="wechat">
+					<img src="../../asster/icon/wechat-qrcode.png" alt="">
+				</div>
+			</div>
+			<div class="sidebar-list">
+				<div class="sidebar-img">
+					<img src="../../asster/icon/qq.png" alt="">
+				</div>
+				QQ客服
+			</div>
+			<div class="sidebar-list">
+				<div class="sidebar-img">
+					<img src="../../asster/icon/service-online.png" alt="">
+				</div>
+				在线客服
+			</div>
+			<div class="sidebar-list">
+				<div class="sidebar-img">
+					<img src="../../asster/icon/service-call-back.png" alt="">
+				</div>
+				客服回电
+			</div>
+			<div class="sidebar-list">
+				<p>中文客服</p>
+				<p>在线时间</p>
+				<p>工作日</p>
+				<p>8:00-23:00</p>
+			</div>
+		</div>
+	</body>
+	<script src="../../asster/js/jquery-3.5.1.min.js"></script>
+  	<script src="../../asster/js/bootstrap.js"></script>
+  	<script src="../../asster/js/jquery.i18n.js"></script>
+  	<script src="../../asster/js/index.js"></script>
+	<script>
+		$(function(){
+			$(".guanli").mouseover(function(){
+				$(".daili-box").show();
+			}).mouseout(function(){
+				$(".daili-box").hide();
+			});
+			$(".daili-box").mouseover(function(){
+				$(".daili-box").show();
+			}).mouseout(function(){
+				$(".daili-box").hide();
+			});
+
+			$(".weixin").mouseover(function(){
+				$(".wechat").show();
+			}).mouseout(function(){
+				$(".wechat").hide();
+			});
+			$(".wechat").mouseover(function(){
+				$(".wechat").show();
+			}).mouseout(function(){
+				$(".wechat").hide();
+			})
+			
+		})
+	</script>
+	<style>
+		.sidebar {
+			width: 73px;
+			position:fixed;
+			right: 0;
+			top: 30%;
+			background:rgb(238, 240, 243);
+			color: #4182be;
+			text-align:center;
+			font-size: 12px;
+			z-index:30;
+			border-top-left-radius: 5px;
+		}
+		.sidebar-list{
+			height: 73px;
+			border-bottom: 1px solid #fff;
+			cursor: pointer;
+		}
+		.sidebar-img img{
+			height: 26px;
+			margin:12px 20px 8px;
+		}
+		.sidebar-list p{
+			margin-bottom: 0px;
+		}
+		.daili-box{
+			width:250px;
+			height: 240px;
+			position:absolute;
+			right: 72px;
+			top: 0;
+			display:none;
+		}
+		.daili{
+			width:250px;
+			height: 240px;
+			background:hsla(0,0%,100%,.8);
+			display:flex;
+			justify-content:space-between;
+			flex-wrap: wrap;
+			padding-top: 20px;
+			color:#333;
+			font-size: 14px;
+			border-radius: 5px;
+		}
+		.daili-list{
+			width: 120px;
+			height: 80px;
+		}
+		.daili a{
+			width: 144px;
+			height: 28px;
+			background:#2058a8;
+			color:#fff;
+			margin: 0 auto;
+			line-height: 28px;
+			border-radius: 5px;
+		}
+		.daili a:hover{
+			text-decoration:none;
+			color:#fff;
+		}
+		.wechat{
+			position:absolute;
+			right:72px;
+			top: 72px;
+			display:none;
+		}
+		.wechat img{
+			width: 73px;
+			height: 73px;
+		}
+	</style>
+</html>

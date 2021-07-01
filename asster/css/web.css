@@ -1,0 +1,95 @@
+.bgbar{
+    height:300px;
+}
+.bg-text{
+    position:absolute;
+}
+.middle{/*居中*/
+    margin: 0 auto;
+}
+.minbox{/*居中盒子*/
+    width:96%;
+    max-width:1200px;
+    margin:60px auto;
+    justify-content: space-between;
+}
+.middle-title{/*居中标题*/
+    text-align: center;
+    font-weight:600;
+    font-size: 26px;
+    margin: 30px 0;
+}
+/*绿色按钮加蓝色链接*/
+.button-link{
+    width: 570px;
+    justify-content:space-between;
+}
+.green-button{
+    color: #fff;
+    width:260px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #78b539;
+    border-radius: 5px;
+}
+.button-link .green-a{
+    text-decoration: none;
+}
+.button-link .blue-link{
+    text-decoration:underline;
+    font-size: 20px;
+    color: #4281bc;
+    line-height: 60px;
+}
+/*为什么选择*/
+.choose{
+    padding: 0 44px;
+    flex-wrap: wrap;
+    height: 520px;
+    align-content: space-between;
+}
+.choose-list{
+    width: 280px;
+    height: 240px;
+    border: 1px solid #4281bc;
+    border-radius: 5px;
+    padding: 40px 0;
+    text-align: center;
+    color: #5a5a5a;
+    line-height: 30px;
+}
+.choose-list:hover{
+    border: none;
+    box-shadow: 0 1px 9px 1px rgb(140 189 248 / 31%);
+}
+.choose-list img{
+    margin-bottom:  20px;
+}
+.choose-list p{
+    margin-bottom: 5px;
+}
+/*产品列表*/
+.product-box{
+    padding: 0 44px;
+}
+.product-box table{
+    box-shadow: 0 0 10px 1px rgb(55 141 196 / 35%);
+}
+.product-box th{
+    text-align: center;
+    vertical-align: middle !important;
+    height: 80px;
+    background-color: #224674 !important;
+    color: #fff !important;
+}
+.product-box td{
+    text-align: center;
+}
+.product-box td a{
+    color: #378dc4;
+}
+.product-box td a:hover{
+    text-decoration: none;
+}
