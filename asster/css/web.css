@@ -240,3 +240,84 @@
 .flow-icon{
     line-height: 80px;
 }
+/*侧边导航*/
+.left-title{
+    font-size:30px;
+    text-align: center;
+    font-weight: 400;
+}
+.left-box{
+    width: 228px;
+}
+.left-ul ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.left-ul li{
+    width: 228px;
+    font-size: 14px;
+    color:#666666;
+    background-color: #f9f9f9;
+    padding: 8px 0 8px 30px;
+}
+.left-ul li:hover{
+    background-color: #2882c0;
+    color: #fff;
+}
+.left-ul li:hover a{
+    color: #fff;
+}
+.left-ul li a{
+    color:#666666;
+}
+.left-ul ul a:hover{
+    text-decoration: none;
+}
+.left-ul li ul li{
+    width:auto;
+}
+.left-list{
+    display: flex;
+    justify-content: space-between
+}
+.left-list span{
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+}
+.left-list svg{
+    margin-right: 16px;
+}
+.li-b{
+    padding: 8px 5px !important;
+    cursor: pointer;
+}
+.left-ul ul ul li{
+    padding: 8px 0 8px 40px;
+}
+.li-active{
+    background-color: #0067ac !important;
+    color: #fff !important;
+}
+.li-active a{
+    color: #fff !important;
+}
+.left-adv{
+    background-color: #f9f9f9;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.left-adv img{
+    margin-bottom: 10px;
+}
+.left-adv-a img{
+    border: 2px solid green
+}
+.left-adv-b img{
+    border: 2px solid #00008b;
+}
+.right-box{
+    width: 937px;
+}
