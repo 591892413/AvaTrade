@@ -1,6 +1,15 @@
 a:hover{
     text-decoration:none;
 }
+.blue-text-a{
+    color:#2882c0;
+}
+.gray-text-a{
+    color:#5b5b5b;
+}
+.gray-text-b{
+    color:#666666;
+}
 .bgbar{
     height:300px;
     overflow-x:hidden;
@@ -326,4 +335,15 @@ a:hover{
 }
 .right-box{
     width: 937px;
+}
+/*half-box*/
+.half-box{
+    display: flex;
+    justify-content: space-between;
+}
+.half-left{
+    width: 50%;
+}
+.half-right{
+    width: 50%;
 }

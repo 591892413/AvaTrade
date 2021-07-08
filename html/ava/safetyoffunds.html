@@ -148,7 +148,10 @@
 		});
 		$(function(){
             $(".left-ul ul ul").hide();
+            $(".li-active").next().show();
             $(".shed").hide();
+            $(".li-active .shed").show();
+            $(".li-active .add").hide();
             $(".li-a").click(function(){
 				console.log($(this).children().eq(0).children())
                 $(this).next().slideToggle(500);
