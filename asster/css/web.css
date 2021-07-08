@@ -1,9 +1,15 @@
+a:hover{
+    text-decoration:none;
+}
 .bgbar{
     height:300px;
     overflow-x:hidden;
 }
 .bg-text{
     position:absolute;
+}
+.p-14{
+    font-size: 14px;
 }
 .middle{/*居中*/
     margin: 0 auto;
