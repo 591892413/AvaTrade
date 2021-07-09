@@ -11,8 +11,9 @@ a:hover{
     color:#666666;
 }
 .bgbar{
-    height:300px;
-    overflow-x:hidden;
+}
+.bg-img img{
+    width: 100%
 }
 .bg-text{
     position:absolute;

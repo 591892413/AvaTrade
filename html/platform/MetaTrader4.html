@@ -13,7 +13,7 @@
 	<div id="sidebar"></div>
     <div class="bgbar">
         <div class="bg-img">
-            <img src="../../asster/image/ava_advantage_banner.jpg" alt="">
+            <img src="../../asster/image/trading_platform_banner.jpg" alt="">
         </div>
     </div>
 	<div class="minbox d-flex">
@@ -42,9 +42,9 @@
 						</div>
 					</li>
                     <ul>
-						<a href=""><li>什么是 MetaTrader</li></a>
-                        <a href=""><li>浮动点差账户</li></a>
-                        <a href=""><li>Guardian Angel</li></a>
+						<a href="../platform/what-is-metatrader.html"><li>什么是 MetaTrader</li></a>
+                        <a href="../platform/floating-spreads.html"><li>浮动点差账户</li></a>
+                        <a href="../platform/guardian-angel.html"><li>Guardian Angel</li></a>
 					</ul>
 					<a href="#"><li class="li-a">MetaTrader 5</li></a>
                     <a href="#"><li class="li-a">WebTrader</li></a>
@@ -103,12 +103,85 @@
             </div>
             <div class="half-box">
                 <div class="half-left">
-                    
+                    <div class="a-title mb-4">设置PC端MT4</div>
+					<img src="../../asster/image/pc.png" alt="">
+					<div class="black-button-list">
+						<a href=""><div class="black-button">开立交易账户</div></a>
+						<a href=""><div class="black-button">下载并安装MT4</div></a>
+						<a href=""><div class="black-button">登录MT4</div></a>
+					</div>
                 </div>
                 <div class="half-right">
-
+					<div class="a-title mb-4">移动端MT4下载</div>
+					<div class="qrcode">
+						<div class="qrcode-list">
+							<img src="../../asster/icon/ios.png" alt="">
+							<div>扫码下载iOS端MT4</div>
+						</div>
+						<div class="qrcode-list">
+							<img src="../../asster/icon/mt4-android-qr.png" alt="">
+							<div>扫码下载安卓端MT4</div>
+						</div>
+					</div>
+					<p>安卓端请使用QQ浏览器扫码下载安装包</p>
+					<p>PC端MT4软件将不再支持1170以下版本，请及时更新至最新版本。</p>
+					<div class="qrcode-link"><a href="#">MT4操作说明（电脑版）</a></div>
                 </div>
             </div>
+			<div class="a-title mt-5 mb-4">MT4平台优势</div>
+			<div class="half-box">
+				<div class="half-left">
+					<img src="../../asster/image/advantage.png" alt="">
+				</div>
+				<div class="half-right">
+					<ul>
+						<li>
+							<div class="half-title">支持EA自动化交易</div>
+							<div class="half-text">AvaTrade<a href="#">爱华</a>不限制任何形式的EA程序（智能交易），但EA程序需要您自行开发、购买以及测试。</div>
+						</li>
+						<li>
+							<div class="half-title">强大的图表分析功能</div>
+							<div class="half-text">可通过不同的时间框架对价格走势进行分析并作出您的决策，可以添加数十种指标，并支持扩展添加自定义指标，使图表分析更加强大。</div>
+						</li>
+						<li>
+							<div class="half-title">DupliTrade</div>
+							<div class="half-text">DupliTrade是一个<a href="#">MT4</a>兼容平台，允许交易者直接复制专业交易者的操作到您在爱华的交易帐户中。DupliTrade以丰富的组合、精选具有成功历史交易记录的交易者的交易策略 ，提升您的交易水准。</div>
+						</li>
+						<li>
+							<div class="half-title">交易策略</div>
+							<div class="half-text">AvaTrade爱华为您提供一流的自动技术分析工具<a href="#">Trading Central</a>。为专业投资者提供实时更新、动态、可操作的交易建议支持。</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="whatis-button button-link d-flex middle mt-4 mt-5">
+				<a href="#" class="green-a"><div class="green-button">开立真实账户</div></a>
+				<a href="#"><div class="blue-link">注册模拟账户</div></a>
+			</div>
+			<div class="a-title mt-5">为什么选择AvaTrade爱华？</div>
+			<div class="why">
+				<ul class="list-unstyled">
+					<li>
+						<div class="blue-box"></div>
+						<span>作为一家欧洲知名的经纪商，至今已经有十余年历史，信誉与实力值得您选择。</span>
+					</li>
+					<li>
+						<div class="blue-box"></div>
+						<span>AvaTrade提供一站式交易方式，在交易软件中可以交易多种差价合约金融产品，包括股票、股指、ETF等。</span>
+					</li>
+					<li>
+						<div class="blue-box"></div>
+						<span>AvaTrade提供极具竞争力的点差。</span>
+					</li>
+					<li>
+						<div class="blue-box"></div>
+						<span>免费提供专业分析师撰写的每日市场分析文章，以及在线教学课程等一系列服务。</span>
+					</li>
+				</ul>
+			</div>
+			<div class="lastimg mb-5">
+				<img src="../../asster/image/2c58959c4e927f367013c93be2506f59.jpg" alt="">
+			</div>
 		</div>
 	</div>
     <div id="footer"></div>
@@ -162,5 +235,94 @@
         padding: 0 0 32px;
         
     }
+	/*设置下载*/
+	.half-left{
+		position: relative;
+	}
+	.black-button-list{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 265px;
+		top: 60px;
+		right: 150px;
+	}
+	.black-button{
+		width: 170px;
+		height: 46px;
+		border: 2px solid #000;
+		border-radius: 5px;
+		font-size: 18px;
+		text-align: center;
+		line-height:46px;
+	}
+	.black-button-list a{
+		color:#000;
+	}
+	.black-button-list a:hover{
+		text-decoration: none;
+	}
+	.qrcode{
+		display: flex;
+		justify-content: space-evenly;
+		text-align: center;
+		margin: 50px 0;
+		width: 360px;
+	}
+	.qrcode-list img{
+		width: 106px;
+		height: 106px;
+	}
+	.half-right p{
+		margin-bottom: 0;
+		color: #ff0000;
+	}
+	.qrcode-link{
+		margin-top: 20px;
+		text-align: center;
+		text-decoration: underline;
+	}
+	.qrcode-link a{
+		color: #0000ee
+	}
+	/*MT4平台优势*/
+	.half-right{
+		width: 440px;
+	}
+	.half-right ul{
+		padding-left: 0px;
+		font-size: 26px;
+		color: #2882c0;
+	}
+	.half-title{
+		font-size: 18px;
+		color: #000;
+	}
+	.half-text{
+		font-size: 14px;
+		color: #000;
+		line-height: 25px;
+		margin-top: 10px;
+	}
+	.half-text a{
+		color: #2882c0;
+	}
+	.half-text a:hover{
+		text-decoration: none;
+	}
+	/*whylist*/
+	.why li{
+		display: flex;
+		margin-top: 30px;
+		font-size: 18px;
+	}
+	.blue-box{
+		width: 10px;
+		height: 10px;
+		background-color: #2882c0;
+		margin-top:8px;
+		margin-right: 10px;
+	}
 </style>
 </html>
