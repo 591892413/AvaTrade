@@ -46,9 +46,10 @@
                         <a href=""><li>浮动点差账户</li></a>
                         <a href=""><li>Guardian Angel</li></a>
 					</ul>
-					<a href="#"><li class="li-a li-active">MetaTrader 5</li></a>
-                    <a href="#"><li class="li-a">WebTrader</li></a>
+					<a href="#"><li class="li-a">MetaTrader 5</li></a>
+                    <a href="#"><li class="li-a li-active">WebTrader</li></a>
                     <a href="#"><li class="li-a">AvaOptions</li></a>
+                    <a href="#"><li class="li-a">网页交易平台</li></a>
 					<li class="li-a li-b">
 						<div class="left-list">
 							<div class="left-text">
@@ -111,7 +112,7 @@
             </div>
             <div class="half-box mt-5">
                 <div class="half-right">
-                    <img src="../../asster/image/why-image.png" alt="">
+                    <img src="../../asster/image/wisdom-image.png" alt="">
                 </div>
                 <div class="half-left pl-5">
                     <div class="a-title">利用群众的智慧</div>
@@ -134,7 +135,54 @@
                     </a>
                 </div>
                 <div class="half-right">
-                    <img src="../../asster/image/why-image.png" alt="">
+                    <img src="../../asster/image/control-image.png" alt="">
+                </div>
+            </div>
+            <div class="a-title">观看WebTrader实际操作，观看我们的视频</div>
+            <video controls src="../../asster/video/webTrader1597816888.822405.MP4" style="width:100%"></video>
+            <div class="a-title mt-5">AvaTrade让交易更自信</div>
+            <div class="confident d-flex justify-content-around">
+                <div class="confident-list">
+                    <img src="../../asster/icon/icon-1.png" alt="">
+                    <p>向受监管经纪商</p>
+                    <p>有保障的入金</p>
+                </div>
+                <div class="confident-list">
+                    <img src="../../asster/icon/icon-2.png" alt="">
+                    <p>超低点差和</p>
+                    <p>掉期利率</p>
+                </div>
+                <div class="confident-list">
+                    <img src="../../asster/icon/icon-3.png" alt="">
+                    <p>杰出的多语种</p>
+                    <p>服务和支持</p>
+                </div>
+            </div>
+            <div class="half-box mt-5">
+                <div class="half-left">
+                    <div class="a-title">投资自己</div>
+                    <div>在一个人的一生中，总会有一段时间，他存了一小笔钱，却遇到了进退两难的境地。您和您的资金可能有哪些投资机会？嗯，答案很简单。外汇市场每天的交易量约为5万亿美元！这笔惊人的金额不仅包括银行、国家和大公司之间的交易，而且每天都有数百万处于不同金融阶段的人投资于充满活力的外汇市场。AvaTrade提供了各种各样的标的物进行交易，如数字货币、股票、黄金、原油等。</div>
+                </div>
+                <div class="half-right pl-5">
+                    <img src="../../asster/image/tree-image.png" class="w-75" alt="">
+                </div>
+            </div>
+            <div class="half-box mt-5 mb-5">
+                <div class="half-right pl-5">
+                    <img src="../../asster/image/light-image.png" style="margin-top: 20%" alt="">
+                </div>
+                <div class="half-left">
+                    <div class="a-title">但怎么做呢？一个几乎没有经验的人能进入 这个市场吗？</div>
+                    <div>答案是肯定的。AvaTrade为各级交易者提供丰富的交易解决方案首先，您可以从一个不存入任何资金的模拟账户开始-只需像使用真实账户一样进行交易，只使用虚拟资金-纸币(这就是为什么它有时被称为“纸交易”)。在那里，您将学会管理风险，净值，操作止损和止盈订单。一旦您学会了基础知识，您就可以开始尝试套期保值技术--如何“保障”您的头寸，剥头皮--这是一种非常高压的技术，能够以非常小、很快的增量创造利润，等等。总而言之，如果您是一个初学者，想要试水，那么在线交易就是答案。我们的WebTrader平台本身就很简单；接下来，您可以使用我们的移动AvaTradeGo应用程序，一旦您掌握了诀窍，您就会想用AvaOptions来体验传统期权的乐趣。</div>
+                </div>
+            </div>
+            <div class="half-box">
+                <div class="half-left">
+                    <div class="a-title">投资自己</div>
+                    <div>在一个人的一生中，总会有一段时间，他存了一小笔钱，却遇到了进退两难的境地。您和您的资金可能有哪些投资机会？嗯，答案很简单。外汇市场每天的交易量约为5万亿美元！这笔惊人的金额不仅包括银行、国家和大公司之间的交易，而且每天都有数百万处于不同金融阶段的人投资于充满活力的外汇市场。AvaTrade提供了各种各样的标的物进行交易，如数字货币、股票、黄金、原油等。</div>
+                </div>
+                <div class="half-right pl-5">
+                    <img src="../../asster/image/computer.png" alt="">
                 </div>
             </div>
 		</div>
@@ -172,15 +220,6 @@
 				$(this).children().eq(0).children().eq(1).children().toggle();
             });
         });
-        $(function(){
-            $('.qrcode').hide()
-            $('.half-list').mouseover(function(){
-                $(this).children().eq(2).toggle();
-            });
-            $('.half-list').mouseout(function(){
-                $(this).children().eq(2).toggle();
-            });
-        })
 	</script>
 </body>
 <style>
@@ -195,19 +234,20 @@
     .half-box{
         line-height: 30px;
     }
-    .a-button{
-        width: 234px;
-        height: 44px;
-        border-radius: 20px;
-        border: 1px solid #4094f8;
-        text-align: center;
-        line-height: 44px;
-    }
     .half-left a{
         color: #4094f8;
     }
     .half-left a:hover{
         text-decoration: none;
+    }
+    /*AvaTrade让交易更自信*/
+    .confident{
+        font-size: 20px;
+        color: #343434;
+        text-align: center;
+    }
+    .confident-list img{
+        margin-bottom: 24px;
     }
 </style>
 </html>

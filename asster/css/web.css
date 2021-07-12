@@ -1,6 +1,14 @@
 a:hover{
     text-decoration:none;
 }
+.a-button{
+    width: 234px;
+    height: 44px;
+    border-radius: 20px;
+    border: 1px solid #4094f8;
+    text-align: center;
+    line-height: 44px
+}
 .blue-text-a{
     color:#2882c0;
 }
@@ -9,8 +17,6 @@ a:hover{
 }
 .gray-text-b{
     color:#666666;
-}
-.bgbar{
 }
 .bg-img img{
     width: 100%
