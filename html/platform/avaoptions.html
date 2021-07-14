@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asster/css/bootstrap.css">
+    <link rel="stylesheet" href="../../asster/css/web.css">
+    <title>AVA优势特点</title>
+</head>
+<body>
+    <div id="head"></div>
+	<div id="sidebar"></div>
+    <div class="bgbar">
+        <div class="bg-img">
+            <img src="../../asster/image/pcbannerbg.png" alt="">
+        </div>
+        <div class="bg-text">
+            <span>众多投资者首选的期权平台</span>
+            <p><span class="white-triangle inline-block mr-3"></span>借助外汇期权控制风险</p>
+            <p><span class="white-triangle inline-block mr-3"></span>专业且强大的桌面交易系统</p>
+            <p><span class="white-triangle inline-block mr-3"></span>外汇期权实时报价小组件</p>            
+        </div>
+    </div>
+    <div class="middle-title sign-title mb-20">网页版交易平台优势</div>
+    <div class="sign minbox d-flex">
+        <div class="sign-video">
+            <img src="../../asster/image/page-com.png" alt="">
+        </div>
+        <div class="sign-main">
+            <div class="sign-list mb-20">
+                <img src="../../asster/icon/avaprotect-saniocn.png" alt="">
+                <span>更直观，更流畅的交易操作界面</span>
+            </div>
+            <div class="sign-list mb-20">
+                <img src="../../asster/icon/avaprotect-saniocn.png" alt="">
+                <span>无需下载和安装，在线登陆即可交易</span>
+            </div>
+            <div class="sign-list mb-20">
+                <img src="../../asster/icon/avaprotect-saniocn.png" alt="">
+                <span>现货、期权一键点击、切换自如</span>
+            </div>
+            <div class="sign-list mb-20">
+                <img src="../../asster/icon/avaprotect-saniocn.png" alt="">
+                <span>支持在线客服，随时解答您的问题</span>
+            </div>
+            <div class="sign-list mb-20">
+                <img src="../../asster/icon/avaprotect-saniocn.png" alt="">
+                <span>多种交易组合操作模式，灵活便捷</span>
+            </div>
+            <div class="sign-list mb-20">
+                <img src="../../asster/icon/avaprotect-saniocn.png" alt="">
+                <span>多种时间模式选择，更多分析视角</span>
+            </div>
+            <div class="whatis-button button-link d-flex middle w-450 mt-5">
+                <a href="#" class="green-a"><div class="green-button">开立真实账户</div></a>
+                <a href="#"><div class="blue-link">注册模拟账户</div></a>
+            </div>
+        </div>
+        
+    </div>
+    <div id="footer"></div>
+    <script src="../../asster/js/jquery-3.5.1.min.js"></script>
+	<script src="../../asster/js/jquery.i18n.js"></script>
+	<script src="../../asster/js/bootstrap.js"></script>
+	<script src="../../asster/js/index.js"></script>
+	<script>
+		$(function(){
+			$('#head').load('../component/NavBar.html', function () {
+				let headSrc = document.createElement("script");
+				headSrc.src = "../../asster/js/bootstrap.js";
+				$('body').append(headSrc)
+			});
+		});
+		$(function(){
+			$('#footer').load('../component/Footer.html');
+		});
+		$(function(){
+			$('#sidebar').load('../component/sidebar.html');
+		});
+	</script>
+</body>
+<style>
+    .mb-90 a{
+        color: #2583c2;
+    }
+    .mb-90 a:hover{
+        text-decoration:none;
+        color: #2583c2;
+    }
+    .bg-text{
+		top: 150px;
+		left: 20%;
+		color:#fff;
+		font-size: 18px;
+		}
+	.bg-text span{
+		font-size: 36px;
+        font-weight: 600;
+	}
+	.mb-20{
+        margin-bottom: 20px;
+    }
+    .mb-30{
+        margin-bottom: 30px;
+    }
+    .mb-40{
+        margin-bottom: 40px;
+    }
+    .mb-90{
+        margin-bottom: 90px
+    }
+    .bg-text p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .white-triangle {
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left: 12px solid #fff;
+    display: inline-block;
+    }
+    /*轻松6步，加入AVA保障计划*/
+    .sign{
+        flex-wrap: wrap;
+    }
+    .sign-main{
+        width: 468px;
+    }
+    .sign-main img{
+        margin-right: 12px;
+    }
+    .sign-title{
+        font-weight: bold;
+        font-size: 36px;
+    }
+    .sign-video{
+        width: 600px;
+    }
+    .sign-video video{
+        width: 600px;
+    }
+    .w-450{
+        width: 450px;
+    }
+    .foot{
+        margin-top: 0;
+    }
+</style>
+</html>
