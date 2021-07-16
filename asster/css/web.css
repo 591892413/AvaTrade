@@ -304,8 +304,6 @@ a:hover{
     justify-content: space-between
 }
 .left-list span{
-    font-size: 12px;
-    font-weight: 800;
     text-align: center;
 }
 .left-list svg{
@@ -317,6 +315,15 @@ a:hover{
 }
 .left-ul ul ul li{
     padding: 8px 0 8px 40px;
+}
+.li-c{
+    padding: 0px 0 0px 60px !important;
+}
+.left-text span{
+    cursor: pointer;
+}
+.left-svg{
+    cursor: pointer;
 }
 .li-active{
     background-color: #0067ac !important;
