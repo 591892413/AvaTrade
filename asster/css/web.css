@@ -361,3 +361,14 @@ a:hover{
 .half-right{
     width: 50%;
 }
+/*46分盒子*/
+.box46{
+    display: flex;
+    justify-content: space-between;
+}
+.box46-4{
+    width: 40%;
+}
+.box46-6{
+    width: 60%;
+}
