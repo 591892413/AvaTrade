@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asster/css/bootstrap.css">
+    <link rel="stylesheet" href="../../asster/css/web.css">
+    <link rel="shortcut icon" href="../../asster/icon/favicon.ico">
+    <title>亚马逊股票</title>
+</head>
+
+<body>
+    <div id="head"></div>
+    <div id="sidebar"></div>
+    <div class="bgbar">
+        <div class="bg-img">
+            <img src="../../asster/image/trading_info_banner.jpg" alt="">
+        </div>
+    </div>
+    <div class="minbox d-flex">
+        <div class="left-box">
+            <div class="left-title">
+                交易产品
+            </div>
+            <div class="left-ul">
+                <ul>
+                    <a href="#">
+                        <li class="li-a">产品综述</li>
+                    </a>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">外汇交易</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="">
+                            <li>美元/日元 - USD/JPY</li>
+                        </a>
+                        <a href="">
+                            <li>澳元/美元 - AUD/USD</li>
+                        </a>
+                        <a href="">
+                            <li>欧元/美元 - EUR/USD</li>
+                        </a>
+                        <a href="">
+                            <li>英镑/美元 - GBP/USD</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">大宗商品</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">贵金属</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">黄金</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">白银</li>
+                            </a> 
+                            <a href="">
+                                <li class="li-c">铂金</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">铜</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">钯金</li>
+                            </a>
+                        </ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">农产品</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">玉米交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">咖啡交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">棉花交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">小麦交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">大豆交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">可可交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">糖交易</li>
+                            </a>
+                        </ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">能源</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">原油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">燃料油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">汽油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">天然气交易</li>
+                            </a>
+                        </ul>
+                    </ul>
+                    <li class="li-a li-b li-active">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">股票</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="">
+                            <li>Google股票</li>
+                        </a>
+                        <a href="">
+                            <li class="li-active">亚马逊股票</li>
+                        </a>
+                        <a href="">
+                            <li>可口可乐股票</li>
+                        </a>
+                        <a href="">
+                            <li>拜耳股票</li>
+                        </a>
+                        <a href="">
+                            <li>巴克莱股票</li>
+                        </a>
+                        <a href="">
+                            <li>阿迪达斯股票</li>
+                        </a>
+                        <a href="">
+                            <li>苹果股票</li>
+                        </a>
+                        <a href="">
+                            <li>AT&T股票</li>
+                        </a>
+                        <a href="">
+                            <li>波音股票</li>
+                        </a>
+                        <a href="">
+                            <li>埃克森美孚股票</li>
+                        </a>
+                        <a href="">
+                            <li>华特迪士尼股票</li>
+                        </a>
+                        <a href="">
+                            <li>阿里巴巴股票</li>
+                        </a>
+                        <a href="">
+                            <li>京东股票</li>
+                        </a>
+                        <a href="">
+                            <li>百度股票</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">股指</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="">
+                            <li>道琼斯指数</li>
+                        </a>
+                        <a href="">
+                            <li>纳斯达克100指数</li>
+                        </a>
+                        <a href="">
+                            <li>标普500指数</li>
+                        </a>
+                        <a href="">
+                            <li>美元指数</li>
+                        </a>
+                        <a href="">
+                            <li>日经225</li>
+                        </a>
+                        <a href="">
+                            <li>恒生指数</li>
+                        </a>
+                        <a href="">
+                            <li>富时A50</li>
+                        </a>
+                        <a href="">
+                            <li>CAC40指数</li>
+                        </a>
+                        <a href="">
+                            <li>DAX30指数</li>
+                        </a>
+                        <a href="">
+                            <li>FTSE100</li>
+                        </a>
+                        <a href="">
+                            <li>SPI200指数</li>
+                        </a>
+                        <a href="">
+                            <li>欧洲斯托克指数</li>
+                        </a>
+                        <a href="">
+                            <li>AEX指数</li>
+                        </a>
+                        <a href="">
+                            <li>VIX指数</li>
+                        </a>
+                        <a href="">
+                            <li>瑞士20指数</li>
+                        </a>
+                        <a href="">
+                            <li>SPAIN35</li>
+                        </a>
+                        <a href="">
+                            <li>Russell 2000指数</li>
+                        </a>
+                        <a href="">
+                            <li>INDIA 50指数</li>
+                        </a>
+                        <a href="">
+                            <li>FTSE MIB指数交易</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">差价合约</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="">
+                            <li>ETF交易</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约交易CFDs的种类</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约交易CFDs的优势</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约的交易特点</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约的发展史</li>
+                        </a>
+                    </ul>
+                </ul>
+            </div>
+            <div class="left-adv">
+                <a href="#" class="left-adv-a"><img src="../../asster/image/real-account.png" alt=""></a>
+                <a href="#" class="left-adv-b"><img src="../../asster/image/demo-account.png" alt=""></a>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="bread d-flex">
+                <div class="bread-left" style="font-size: 24px;">亚马逊股票</div>
+                <div class="bread-right">
+                    <div class="bread-img">
+                        <img src="../../asster/icon/page_right_common.png" alt="">
+                        <span><a href="#">首页</a></span>
+                        <span> → </span>
+                        <span><a href="#">交易产品</a></span>
+                        <span> → </span>
+                        <span><a href="#">股票</a></span>
+                        <span> → </span>
+                        <span><a href="#">亚马逊股票</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="tradingview-widget-container mt-4">
+                <div id="vue-trading-view">
+                    <div id="tradingview_64bea-wrapper"
+                        style="position: relative;box-sizing: content-box;width: 100%;height: 500px;margin: 0 auto !important;padding: 0 !important;font-family:Arial,sans-serif;">
+                        <div style="width: 100%;height: 500px;background: transparent;padding: 0 !important;">
+                            <iframe id="tradingview_64bea" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_195f5&symbol=NASDAQ%3AAMZN&interval=D&hidetoptoolbar=1&saveimage=1&toolbarbg=f1f3f6&studies=%5B%5D&theme=Light&style=1&timezone=Etc%2FUTC&studies_overrides=%7B%7D&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=zh_CN&utm_source=www.avatrade.cn&utm_medium=widget&utm_campaign=chart&utm_term=NASDAQ%3AAMZN" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 a-title">一、买卖亚马逊股票</div>
+            <div class="mt-2">
+                1994年7月5日，Jeff Bezos在父母的资助下，以25万美元启动资金创建网上书店亚马逊（Amazon）。几个月内，业务就带来了每周2万美元的收入。1995年10月，亚马逊宣布上市。1996年，亚马逊在特拉华（Delaware）重新注册成立。随后不到一年，亚马逊于1997年5月15日在纳斯达克交易所上市，发行价每股18美元，交易代码AMZN。如今，亚马逊总部在华盛顿西雅图，无论按收入还是市值计，都是全球首屈一指的电商和云计算公司。
+            </div>
+            <div class="text-center mt-4">
+                <img src="../../asster/image/4fe9e1a80f87f2728a7e15d1dc7c7493.jpg" alt="">
+            </div>
+            <div class="mt-4">
+                亚马逊股票因此备受追捧。投资者看到了公司的持续创新，并且相信这点将支持其维持竞争优势。来看收购。与科技行业其它的竞争对手相比，亚马逊传统保守，少有收购案例。但最近几年，情况发生了变化。在这期间，亚马逊至少完成了10宗并购交易。截至目前，最重要的收购有对Whole Foods（价值137亿美元）、Ring（价值18亿美元，是一家小型门铃制造商）、Kiva Systems（价值7.75亿美元，一家机器人任务系统制造商）、Zappos（价值12亿美元，鞋子与服装在线零售商）和PillPack（价值10亿美元，是一家提供全面服务的药房，提供打包与快递上门服务）。
+            </div>
+            <div class="whatis-button button-link d-flex middle mt-4 mt-5">
+                <a href="#" class="green-a">
+                    <div class="green-button">开立真实账户</div>
+                </a>
+                <a href="#">
+                    <div class="blue-link">注册模拟账户</div>
+                </a>
+            </div>
+            <div class="mt-4 a-title">
+                二、亚马逊股票的历史
+            </div>
+            <div class="mt-4">
+                亚马逊的上市发行价报在每股18.00美元。上市后进行了三次拆股：1998年6月2日为2:1；1999年1月5日为3:1；最后一次是1999年9月1日为2:1。三次拆股后，首次公开募股的价格调整为每股1.50美元。
+            </div>
+            <div class="mt-4">
+                过去十年里，亚马逊实现了显着的增长。2008年金融危机中，股价跌至80美元以下。十年后，股价上涨到2000美元左右。纵向比较起来，2008年投资的1000美元，到现在以市价计升值到23,000多美元。至于分红，亚马逊从未向其普通股股东宣布或支付过现金分红。这个科技巨头目前也没有一般大众直购股票计划(direct stock purchase plans，DSPPs)。
+            </div>
+            <div class="mt-4">
+                很多人可能会问，为什么投资者会对一支没有红利收入的股票感兴趣？第一个原因可能是股票价值的增加。一般而言，没有分红的股票升值速度快于有分红的股票。第二个原因可能是可以避免双重计税。除非决定卖出持有的股票，否则投资者实际上不需要缴税。很多不分红的公司通常把利润的大头用于研发的再投资和开展新的计划，或许可以在长期内给投资者带来更多的价值。
+            </div>
+            <div class="mt-4">
+                在亚马逊这个例子里，高股价意味着任何实质性分红的代价是可能对公司造成非常大的损失，并可能妨碍其它主要问题，比如当下对高质量并购的谋划、对正在进行中运营的投资以及偿债。亚马逊是通过股价的不断上升，而不是通过分红来使投资者越来越满意。亚马逊的做法可能是对的，因其股票是最具吸引力的个股之一。
+            </div>
+            <div class="whatis-button button-link d-flex middle mt-4 mt-5">
+                <a href="#" class="green-a">
+                    <div class="green-button">开立真实账户</div>
+                </a>
+                <a href="#">
+                    <div class="blue-link">注册模拟账户</div>
+                </a>
+            </div>
+            <div class="mt-4 a-title">三、如何交易亚马逊股票</div>
+            <div class="mt-4">
+                华尔街的一个共识是，亚马逊的前景非常光明，其股票因此成为高价值个股。但股价永远不会直线波动，即使在亚马逊的股票图表上也是如此。交易亚马逊股票时要考虑如下几个因素：
+            </div>
+            <div class="mt-4 f-18">
+                1.关税与贸易协定
+            </div>
+            <div class="mt-4">
+                Amazon.com是一家集市，在那里，大多数卖主使用亚马逊物流（Amazon FBA）将货物运送到北美市场。很多卖主的产品是在更廉价的地方，比如中国购买或生产，然后装船到美国在线销售。这是一种相当直接的模式，但主要国家间关税与贸易协定的变化可以影响卖主的成本，进而影响到他们的利润空间。如果卖主遭遇亏损，Amazon.com可能遭受连带冲击。
+            </div>
+            <div class="mt-4 f-18">
+                2.竞争对手的表现
+            </div>
+            <div class="mt-4">
+                Amazon处于高增长行业，天然吸引巨头们的注意。在电商领域，亚马逊的竞争对手有阿里巴巴、Otto、eBay和Flipkart。而其深度涉足零售业则吸引主流线下零售商，比如Walmart、Costco、Target和Home Depot加入竞争。在线上流媒体方面，Amazon Prime Video的竞争对手是Netflix和苹果iTunes。在企业云托管领域，竞争对手则有微软、谷歌等巨头。这些对手皆实力雄厚，将其表现与亚马逊的表现评估衡量永远是明智的做法。
+            </div>
+            <div class="mt-4 f-18">3.新发产品/服务</div>
+            <div class="mt-4">
+                上文说过，亚马逊是一家高度创新的公司，有资金实力也有能力发布新的产品，甚至可以时常展开新的并购。评估这些并购对短期和长期利润的影响，非常重要。这些年，消费电子产品的发展之快令人瞠目。但投资者也应注意对股票的未来影响更大的所谓“登月计划”。
+            </div>
+            <div class="mt-4 f-18">4.定期财报</div>
+            <div class="mt-4">
+                亚马逊的财年与日历一致，即结束于12月31日。投资者应该观察亚马逊的季度财报以了解不同业务板块的表现，并对业务未来的发展前景有一个全球视野。很多传统投资者愿意以更长期的角度看待股票，但中短期内记得提到的这些因素至关重要。中短期内将这些重点刻在脑海里，有助于投资者抓住高质量交易机会，有机会在较短的周期内也有斩获。
+            </div>
+            <div class="mt-4 a-title">四、AvaTrade亚马逊股票交易信息</div>
+            <div class="mt-4">
+                · <a href="#">MT4</a>代码：#AMAZON
+            </div>
+            <div class="mt-4">
+                · 国家：美国
+            </div>
+            <div class="mt-4">
+                · 货币：美元
+            </div>
+            <div class="mt-4">
+                · 交易所：<a href="#">纳斯达克</a>
+            </div>
+            <div class="mt-4">
+                · 杠杆最高：10：1
+            </div>
+            <div class="mt-5 a-title">五、为什么在AvaTrade交易亚马逊股票<a href="#">差价合约</a></div>
+            <div class="mt-4">· AvaTrade是备受赞誉、接受监管的经纪商。我们的交易服务透明并且以最新安全技术保障客户资金与个人信息的安全。</div>
+            <div class="mt-4">· 根据市场趋势的方向做多或做空亚马逊股票。</div>
+            <div class="mt-4">· 每股2000多美元的价格令许多零售投资者望而却步。AvaTrade提供的差价合约<a href="#">杠杆</a>最高达到10:1，赋予投资者以极低的启动资金交易亚马逊股票差价合约的好机会。在AvaTrade，投资者最低只需入金100美元即可开立头寸并享受亚马逊<a href="#">股票交易</a>的好处。</div>
+            <div class="mt-4">· 每周5X24小时，以20余种语言提供专业、快速响应的客户支持。</div>
+            <div class="mt-4">· 种类繁多、功能强大、界面直观的交易平台导航方便又好用。此外，忙碌的时候您还可以透过手机交易抓住机会。</div>
+            <div class="mt-4">· AvaTrade支持自动交易。透过这个功能，您可以复制平台上其它顶级交易员的操作。</div>
+            <div class="mt-4">· 具有竞争力的点差。</div>
+            <div class="mt-4 mb-4">· 丰富的金融交易培训，比如网络研讨会、视频、<a href="#">电子书</a>、常见问答等，还可访问每日专家市场分析和交易提示。</div>
+            <b>现在就在AvaTrade开始交易亚马逊等股票的差价合约。</b>
+            <div class="whatis-button button-link d-flex middle mt-4 mt-5">
+                <a href="#" class="green-a">
+                    <div class="green-button">开立真实账户</div>
+                </a>
+                <a href="#">
+                    <div class="blue-link">注册模拟账户</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../../asster/js/jquery-3.5.1.min.js"></script>
+    <script src="../../asster/js/jquery.i18n.js"></script>
+    <script src="../../asster/js/bootstrap.js"></script>
+    <script src="../../asster/js/index.js"></script>
+    <script>
+        $(function () {
+            $('#head').load('../component/NavBar.html', function () {
+                let headSrc = document.createElement("script");
+                headSrc.src = "../../asster/js/bootstrap.js";
+                $('body').append(headSrc)
+            });
+        });
+        $(function () {
+            $('#footer').load('../component/Footer.html');
+        });
+        $(function () {
+            $('#sidebar').load('../component/sidebar.html');
+        });
+        $(function () {
+            $(".left-ul ul ul").hide();
+            $(".li-active").next().show();
+            $(".shed").hide();
+            $(".li-active .shed").show();
+            $(".li-active .add").hide();
+            $(".left-text .add").click(function () {
+                console.log($(this).parent())
+                $(this).parent().parent().parent().next().slideToggle(500);
+                $(this).toggle();
+                $(this).next().toggle();
+                $(this).parent().next().children().toggle();
+            })
+            $(".left-text .shed").click(function () {
+                $(this).parent().parent().parent().next().slideToggle(500);
+                $(this).toggle();
+                $(this).prev().toggle();
+                $(this).parent().next().children().toggle();
+            })
+            $(".left-svg").click(function () {
+                $(this).parent().parent().next().slideToggle(500);
+                $(this).children().toggle();
+                $(this).prev().children().eq(0).toggle();
+                $(this).prev().children().eq(1).toggle();
+            })
+        });
+    </script>
+</body>
+<style>
+    .right-box {
+        color: #666666;
+    }
+
+    .right-box a {
+        color: #2882c0
+    }
+    .bread a{
+        color: #666666;
+    }
+    .a-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .half-box {
+        line-height: 24px;
+    }
+
+    .half-left a {
+        color: #2882c0;
+    }
+    .f-18{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    /*top-box*/
+    .top-box {
+        color: #fff;
+        height: 70px;
+        background: url('../../asster/image/product-eur-usd.jpg') no-repeat rgb(180, 201, 0);
+        padding: 6px 16px 6px 202px;
+    }
+
+    .top-title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+</style>
+
+</html>
