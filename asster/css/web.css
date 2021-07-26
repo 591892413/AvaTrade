@@ -373,3 +373,6 @@ a:hover{
 .box46-6{
     width: 60%;
 }
+.blue-shadow{
+    box-shadow: 0 1px 13px 0 rgb(26 83 214 / 18%);
+}

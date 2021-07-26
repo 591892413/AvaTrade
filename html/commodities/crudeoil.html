@@ -595,7 +595,7 @@
                 <div class="class-content">
                     <div class="class-toggle">
                         <dl>
-                            <div class="class-list">
+                            <div class="class-list active">
                                 <dt>
                                     <div class="add"><span>+</span></div>
                                     <div class="shed"><span>-</span></div>
@@ -676,7 +676,10 @@
         });
         $(function(){
             $(".class-toggle dl dd").hide();
-            $(".shed").hide();
+            $(".class-toggle dl .active dd").show();
+            $(".class-toggle dl .shed").hide();
+            $(".class-toggle dl .active .shed").show();
+            $(".class-toggle dl .active .add").hide();
             $(".class-toggle dl dt").click(function(){
                 $(this).children().toggle();
                 $(this).next().slideToggle(500);
