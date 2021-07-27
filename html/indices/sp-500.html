@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asster/css/bootstrap.css">
+    <link rel="stylesheet" href="../../asster/css/app.css">
+    <link rel="stylesheet" href="../../asster/css/web.css">
+    <link rel="shortcut icon" href="../../asster/icon/favicon.ico">
+    <title>标普 500指数</title>
+</head>
+
+<body>
+    <div id="head"></div>
+    <div id="sidebar"></div>
+    <div class="bgbar">
+        <div class="bg-img">
+            <img src="../../asster/image/sp-banner.jpg" alt="">
+        </div>
+    </div>
+    <div class="minbox d-flex">
+        <div class="left-box">
+            <div class="left-title">
+                交易产品
+            </div>
+            <div class="left-ul">
+                <ul>
+                    <a href="#">
+                        <li class="li-a">产品综述</li>
+                    </a>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">外汇交易</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="">
+                            <li>美元/日元 - USD/JPY</li>
+                        </a>
+                        <a href="">
+                            <li>澳元/美元 - AUD/USD</li>
+                        </a>
+                        <a href="">
+                            <li>欧元/美元 - EUR/USD</li>
+                        </a>
+                        <a href="">
+                            <li>英镑/美元 - GBP/USD</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">大宗商品</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">贵金属</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">黄金</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">白银</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">铂金</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">铜</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">钯金</li>
+                            </a>
+                        </ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">农产品</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">玉米交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">咖啡交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">棉花交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">小麦交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">大豆交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">可可交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">糖交易</li>
+                            </a>
+                        </ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">能源</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">原油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">燃料油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">汽油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">天然气交易</li>
+                            </a>
+                        </ul>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">股票</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="../StockIndex/google.html">
+                            <li>Google股票</li>
+                        </a>
+                        <a href="../StockIndex/amazon.html">
+                            <li>亚马逊股票</li>
+                        </a>
+                        <a href="../StockIndex/kekoukele.html">
+                            <li>可口可乐股票</li>
+                        </a>
+                        <a href="../StockIndex/baiergp.html">
+                            <li>拜耳股票</li>
+                        </a>
+                        <a href="../StockIndex/blkgp.html">
+                            <li>巴克莱股票</li>
+                        </a>
+                        <a href="../StockIndex/adidasi.html">
+                            <li>阿迪达斯股票</li>
+                        </a>
+                        <a href="../StockIndex/Apple.html">
+                            <li>苹果股票</li>
+                        </a>
+                        <a href="../StockIndex/ATT.html">
+                            <li>AT&T股票</li>
+                        </a>
+                        <a href="../StockIndex/bygp.html">
+                            <li>波音股票</li>
+                        </a>
+                        <a href="../StockIndex/aksmf.html">
+                            <li>埃克森美孚股票</li>
+                        </a>
+                        <a href="../StockIndex/disney.html">
+                            <li>华特迪士尼股票</li>
+                        </a>
+                        <a href="../StockIndex/alibaba.html">
+                            <li>阿里巴巴股票</li>
+                        </a>
+                        <a href="../StockIndex/jd.html">
+                            <li>京东股票</li>
+                        </a>
+                        <a href="../StockIndex/baidu.html">
+                            <li>百度股票</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b li-active">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">股指</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="djia.html">
+                            <li>道琼斯指数</li>
+                        </a>
+                        <a href="nasdaq-100.html">
+                            <li>纳斯达克100指数</li>
+                        </a>
+                        <a href="">
+                            <li class="li-active">标普500指数</li>
+                        </a>
+                        <a href="">
+                            <li>美元指数</li>
+                        </a>
+                        <a href="">
+                            <li>日经225</li>
+                        </a>
+                        <a href="">
+                            <li>恒生指数</li>
+                        </a>
+                        <a href="">
+                            <li>富时A50</li>
+                        </a>
+                        <a href="">
+                            <li>CAC40指数</li>
+                        </a>
+                        <a href="">
+                            <li>DAX30指数</li>
+                        </a>
+                        <a href="">
+                            <li>FTSE100</li>
+                        </a>
+                        <a href="">
+                            <li>SPI200指数</li>
+                        </a>
+                        <a href="">
+                            <li>欧洲斯托克指数</li>
+                        </a>
+                        <a href="">
+                            <li>AEX指数</li>
+                        </a>
+                        <a href="">
+                            <li>VIX指数</li>
+                        </a>
+                        <a href="">
+                            <li>瑞士20指数</li>
+                        </a>
+                        <a href="">
+                            <li>SPAIN35</li>
+                        </a>
+                        <a href="">
+                            <li>Russell 2000指数</li>
+                        </a>
+                        <a href="">
+                            <li>INDIA 50指数</li>
+                        </a>
+                        <a href="">
+                            <li>FTSE MIB指数交易</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">差价合约</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="">
+                            <li>ETF交易</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约交易CFDs的种类</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约交易CFDs的优势</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约的交易特点</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约的发展史</li>
+                        </a>
+                    </ul>
+                </ul>
+            </div>
+            <div class="left-adv">
+                <a href="#" class="left-adv-a"><img src="../../asster/image/real-account.png" alt=""></a>
+                <a href="#" class="left-adv-b"><img src="../../asster/image/demo-account.png" alt=""></a>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="bread d-flex">
+                <div class="bread-left" style="font-size: 24px;">标普 500指数</div>
+                <div class="bread-right">
+                    <div class="bread-img">
+                        <img src="../../asster/icon/page_right_common.png" alt="">
+                        <span><a href="#">首页</a></span>
+                        <span> → </span>
+                        <span><a href="#">交易产品</a></span>
+                        <span> → </span>
+                        <span><a href="#">股指</a></span>
+                        <span> → </span>
+                        <span><a href="#">标普 500指数</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 a-title">什么是道琼斯指数</div>
+            <div class="mt-3 blue-shadow box46">
+                <div class="box46-6 pl-4 pr-5 pb-3">
+                    <div class="mt-3">
+                        标准普尔500指数的缩写是标普 500（S&P 500 index），反映了美国经济学家精挑细选出来的500家在纽交所和纳斯达克上市的顶级公司的表现。
+                    </div>
+                    <div class="mt-3">
+                        该指数拥有逾7.8万亿美元，资产总计约为2.2万亿美元，占可获得市值的80%。
+                    </div>
+                    <div class="mt-3">
+                        股指的构成和权重由标准普尔道琼斯指数公司决定，但相较另两个流行的股指道琼斯工业平均指数和纳斯达克综指，由于加权方法不同，仍然呈现出差异和优势，并且选取的领域数量繁多。
+                    </div>
+                </div>
+                <div class="box46-4 text-right pt-4">
+                    <video src="../../asster/video/avatrade-sp-500-video.mp4" controls class="w-100"></video>
+                </div>
+            </div>
+            <div class="whatis-button button-link d-flex middle mt-4 mt-5">
+                <a href="#" class="green-a">
+                    <div class="green-button">交易标普 500</div>
+                </a>
+                <a href="#">
+                    <div class="blue-link">注册模拟账户</div>
+                </a>
+            </div>
+            <div class="mt-5 a-title">在AvaTrade爱华交易标普500指数</div>
+            <div class="mt-4">
+                AvaTrade爱华所提供的产品覆盖全球金融市场，随时为您提供最及时的信息、精确的每日市场分析，以及交易工具，帮助您在了解市场的基础上做出交易标普500指数的明智决策。
+            </div>
+            <div class="box46 mt-4">
+                <div class="box46-4 mt-4">
+                    <img src="../../asster/image/pic-trade.jpg" alt="">
+                </div>
+                <div class="box46-6 pl-5">
+                    <div class="box-list">
+                        <img src="../../asster/icon/m-sec-2-icon.png" alt="">
+                        <span class="ml-2">全球七大监管牌照，带来更好的交易体验</span>
+                    </div>
+                    <div class="box-list mt-2">
+                        <img src="../../asster/icon/m-sec-2-icon.png" alt="">
+                        <span class="ml-2">交易标普500指数，投资于更广泛的市场</span>
+                    </div>
+                    <div class="box-list mt-2">
+                        <img src="../../asster/icon/m-sec-2-icon.png" alt="">
+                        <span class="ml-2">双向交易，做多或做空均有盈利可能</span>
+                    </div>
+                    <div class="box-list mt-2">
+                        <img src="../../asster/icon/m-sec-2-icon.png" alt="">
+                        <span class="ml-2">第三方交易观点，把握市场行情走势</span>
+                    </div>
+                    <div class="box-list mt-2">
+                        <img src="../../asster/icon/m-sec-2-icon.png" alt="">
+                        <span class="ml-2">卓越交易平台，MT4、MT5、WebTrader无论哪种设备均可支持</span>
+                    </div>
+                    <div class="box-list mt-2">
+                        <img src="../../asster/icon/m-sec-2-icon.png" alt="">
+                        <span class="ml-2">具有竞争力的点差，以降低您的交易成本</span>
+                    </div>
+                    <div class="box-list mt-2 mb-3">
+                        <img src="../../asster/icon/m-sec-2-icon.png" alt="">
+                        <span class="ml-2">5x24专业在线客服为您服务</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-white mt-5 present">
+                <div class="a-title text-white">关于标普500交易介绍</div>
+                <div class="mt-4">
+                    <img src="../../asster/icon/icon-info-2.png" alt="">
+                    <span>
+                        -- 标普500的最小波动幅度为0.25
+                    </span>
+                </div>
+                <div class="mt-4">
+                    <img src="../../asster/icon/icon-info-3.png" alt="">
+                    <span>
+                        -- 交易标普的保证金要求通常为0.5%（即200:1的杠杆）
+                    </span>
+                </div>
+                <div class="mt-4">
+                    <img src="../../asster/icon/icon-info-4.png" alt="">
+                    <span>
+                        -- 最小交易手数为1个单位
+                    </span>
+                </div>
+                <div class="mt-4">
+                    <img src="../../asster/icon/icon-info-5.png" alt="">
+                    <span>
+                        -- 标普 500的基础货币是美元
+                    </span>
+                </div>
+            </div>
+            <div class="mt-5 a-title">标普500指数的构成</div>
+            <div class="mt-4">
+                标普500指数的所有成分股都以自由流通市值为权重的，即较大的公司在很大程度上改变和影响指数的总价值。
+            </div>
+            <div class="mt-4">
+                与道琼斯指数相比，标普500指数包含的公司更多，因此风险更为分散，能够反映更广泛的市场变化，被普遍认为是一种理想的股票指数。
+            </div>
+            <div class="mt-4">
+                标普500指数是由标准·普尔公司1957年开始编制的。最初的成份股由425种工业股票、15种铁路股票和60种公用事业股票组成。从1976年7月1日开始，其成份股改由400种工业股票、20种运输业股票、40种公用事业股票和40种金融业股票组成。当然为确保股指正面反映美国经济，委员会只会选出最佳公司，并且基于经济的变化，增减成分股。
+            </div>
+            <div class="mt-4">
+                看一眼标普500指数图表，就可以轻松判断出股市和经济的表现如何。
+            </div>
+            <table class="table text-sm text-gray-5a5 normal-shadow">
+                <thead class="text-white bg-blue-203">
+                    <tr>
+                        <th>公司名称</th>
+                        <th>权重</th>
+                        <th>公司名称</th>
+                        <th>权重</th>
+                    </tr>
+                </thead>
+                <tbody class="text-black">
+                    <tr>
+                        <td>埃克森美孚石油公司<br>
+                            Exxon Mobil Corp</td>
+                        <td>3.1172%</td>
+                        <td>国际商业机器公司<br>
+                            Intl Business Machines Corp</td>
+                        <td>1.6814%</td>
+                    </tr>
+                    <tr>
+                        <td>苹果电脑公司<br>
+                            Apple Inc.</td>
+                        <td>2.4098%</td>
+                        <td>强生<br>
+                            Johnson &amp; Johnson</td>
+                        <td>1.6238%</td>
+                    </tr>
+                    <tr>
+                        <td>微软<br>
+                            Microsoft Corp</td>
+                        <td>2.0327%</td>
+                        <td>摩根大通<br>
+                            JP Morgan Chase &amp; Co</td>
+                        <td>1.6101%</td>
+                    </tr>
+                    <tr>
+                        <td>宝洁<br>
+                            Procter &amp; Gamble</td>
+                        <td>1.8204%</td>
+                        <td>美国电报电话公司<br>
+                            AT&amp;T Inc.</td>
+                        <td>1.5419%</td>
+                    </tr>
+                    <tr>
+                        <td>通用电气<br>
+                            General Electric Co</td>
+                        <td>1.7028%</td>
+                        <td>雪佛龙<br>
+                            Chevron Corp</td>
+                        <td>1.5091%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mt-5 a-title">标普500指数的历史</div>
+            <div class="mt-5">
+                <ul class="text-18 leading-none flex items-center justify-between text-center px-10">
+                    <li class="w-200px flex flex-col items-center">
+                        <p class="text-yellow-f69 border-yellow-f69 py-3 px-6 rounded mb-2">1957年</p>
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-yellow.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <p class="text-ora-f57 border-ora-f57 py-3 px-6 rounded mb-2">1967年</p>
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-ora.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <p class="text-green-8bc border-green-8bc py-3 px-6 rounded mb-2">1981年</p>
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-green.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <p class="text-blue-3b8 border-blue-3b8 py-3 px-3 rounded mb-2">1982-1999年</p>
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-blue.png" alt="">
+                    </li>
+                </ul>
+                <ul class="flex items-center justify-between my-3 px-10 bg-no-repeat bg-center bg-contain" style="background: url(&quot;https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/bg-gray-line.png&quot;);">
+                    <li class="w-200px flex flex-col items-center">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-number-1.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-number-2.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-number-3.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-number-4.png" alt="">
+                    </li>
+                </ul>
+                <ul
+                    class="text-sm text-grey-5b5 text-center flex justify-between items-start px-10">
+                    <li class="w-200px">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-blue.png" alt="" class="block mx-auto mb-2">
+                        <p>标准普尔指数公司引进标普500指数</p>
+                    </li>
+                    <li class="w-200px">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-green.png" alt="" class="block mx-auto mb-2">
+                        <p>股指在此期间上涨到近700点</p>
+                    </li>
+                    <li class="w-200px">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-ora.png" alt="" class="block mx-auto mb-2">
+                        <p>年末，股指开始走低并且暴跌到300点</p>
+                    </li>
+                    <li class="w-200px">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-yellow.png" alt="" class="block mx-auto mb-2">
+                        <p>美联储加息，大举重振股指到1,350点</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="text-18 leading-none flex items-center justify-between text-center px-10">
+                    <li class="w-200px flex flex-col items-center">
+                        <p class="text-blue-3b8 border-blue-3b8  py-3 px-6 rounded mb-2">2000年</p>
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-blue.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <p class="text-green-8bc border-green-8bc py-3 px-6 rounded mb-2">2002年</p>
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-green.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <p class="text-ora-f57 border-ora-f57 py-3 px-6 rounded mb-2">2007年</p>
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-ora.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <p class="text-yellow-f69 border-yellow-f69 py-3 px-3 rounded mb-2">2007年3月</p>
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-yellow.png" alt="">
+                    </li>
+                </ul>
+                <ul class="flex items-center justify-between my-3 px-10 bg-no-repeat bg-center bg-contain"
+                    style="background: url(&quot;https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/bg-gray-line.png&quot;);">
+                    <li class="w-200px flex flex-col items-center">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-number-5.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-number-6.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-number-7.png" alt="">
+                    </li>
+                    <li class="w-200px flex flex-col items-center">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-number-8.png" alt="">
+                    </li>
+                </ul>
+                <ul class="text-sm text-grey-5b5 text-center flex justify-between items-start px-10">
+                    <li class="w-200px">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-blue.png" alt="" class="block  mx-auto mb-2">
+                        <p>股市经历了“泡沫”</p>
+                    </li>
+                    <li class="w-200px">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-green.png" alt="" class="block mx-auto mb-2">
+                        <p>标普500指数再度跌到40%，来到成立以来最低点</p>
+                    </li>
+                    <li class="w-200px">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-ora.png" alt="" class="block mx-auto mb-2">
+                        <p>在金融和商品股的提振下，加上房价下跌，股指设法再度反弹</p>
+                    </li>
+                    <li class="w-200px">
+                        <img src="https://avatrade-static.avfpro.cn/assets/home/pages/images/trading-info/sp-500/icon-history-yellow.png" alt="" class="block mx-auto mb-2">
+                        <p>随后6年间反弹，攀升至200%</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="half-box mt-5">
+                <div class="half-left pl-3 pt-5 pr-3 bg-gray-200">
+                    <div class="a-title">影响标普500指数表现的因素</div>
+                    <div class="mt-5">
+                        影响标普500指数表现的因素有很多，既有美国本土的，也有全球经济的。随着各种全国性的经济转变，比如几乎每月都会发生的重大事件，它们将产生影响，比如刚刚结束的2016年美国大选，近期的脱欧等政治事件，有将将影响指数的变化，进而影响股指的走势。
+                    </div>
+                </div>
+                <div class="half-right">
+                    <img src="../../asster/image/pic-factors-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="half-box">
+                <div class="half-right">
+                    <img src="../../asster/image/pic-factors-2.jpg" alt="" class="w-100">
+                </div>
+                <div class="half-left pl-3 pt-3 pr-3 bg-gray-200">
+                    <div class="">
+                        另一个将影响此股指的因素是与国内外供需直接相关的进出口业。大多数交易此股指的投资者需要紧跟国内外变化。通过读懂标普500指数的交易图表并跟随成分股的趋势，就可以掌握行情。
+                    </div>
+                    <div class="mt-4">
+                        影响标普500指数表现的因素有很多，既有美国本土的，也有全球经济的。随着各种全国性的经济转变，比如几乎每月都会发生的重大事件，它们将产生影响，比如刚刚结束的2016年美国大选，近期的脱欧等政治事件，有将将影响指数的变化，进而影响股指的走势。
+                    </div>
+                </div>
+            </div>
+            <div class="lastbar minbox d-flex w-100 mb-0">
+                <div class="lastbar-text">无论是操盘高手，还是投资新手均可交易</div>
+                <a href="#" class="green-a"><div class="green-button mr-5">立即开户</div></a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../../asster/js/jquery-3.5.1.min.js"></script>
+    <script src="../../asster/js/jquery.i18n.js"></script>
+    <script src="../../asster/js/bootstrap.js"></script>
+    <script src="../../asster/js/index.js"></script>
+    <script>
+        $(function () {
+            $('#head').load('../component/NavBar.html', function () {
+                let headSrc = document.createElement("script");
+                headSrc.src = "../../asster/js/bootstrap.js";
+                $('body').append(headSrc)
+            });
+        });
+        $(function () {
+            $('#footer').load('../component/Footer.html');
+        });
+        $(function () {
+            $('#sidebar').load('../component/sidebar.html');
+        });
+        $(function () {
+            $(".left-ul ul ul").hide();
+            $(".li-active").next().show();
+            $(".shed").hide();
+            $(".li-active .shed").show();
+            $(".li-active .add").hide();
+            $(".left-text .add").click(function () {
+                console.log($(this).parent())
+                $(this).parent().parent().parent().next().slideToggle(500);
+                $(this).toggle();
+                $(this).next().toggle();
+                $(this).parent().next().children().toggle();
+            })
+            $(".left-text .shed").click(function () {
+                $(this).parent().parent().parent().next().slideToggle(500);
+                $(this).toggle();
+                $(this).prev().toggle();
+                $(this).parent().next().children().toggle();
+            })
+            $(".left-svg").click(function () {
+                $(this).parent().parent().next().slideToggle(500);
+                $(this).children().toggle();
+                $(this).prev().children().eq(0).toggle();
+                $(this).prev().children().eq(1).toggle();
+            })
+        });
+        $(function () {
+            $(".class-toggle dl dd").hide();
+            $(".class-toggle dl .active dd").show();
+            $(".class-toggle dl .shed").hide();
+            $(".class-toggle dl .active .shed").show();
+            $(".class-toggle dl .active .add").hide();
+            $(".class-toggle dl dt").click(function () {
+                $(this).children().toggle();
+                $(this).next().slideToggle(500);
+            });
+        });
+    </script>
+</body>
+<style>
+    .right-box {
+        color: #5b5b5b;
+    }
+
+    .right-box a {
+        color: #2882c0
+    }
+
+    .right-box a:hover {
+        text-decoration: none;
+    }
+
+    .bread a {
+        color: #666666;
+    }
+
+    .a-title {
+        font-size: 26px;
+        color: #2e2e2e;
+    }
+
+    .half-box {
+        line-height: 24px;
+    }
+
+    .half-left a {
+        color: #2882c0;
+    }
+
+    .f-14 {
+        font-size: 14px;
+    }
+
+    .f-18 {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    /*time*/
+    .time-one {
+        margin-top: -200px;
+        width: 880px
+    }
+
+    .time-one div {
+        width: 131px;
+    }
+
+    .time-two div {
+        width: 160px;
+    }
+
+    .time-two {
+        margin-top: 130px;
+        width: 800px;
+        margin-left: 50px;
+    }
+
+    /*minbox*/
+    .deputy {
+        background-image: linear-gradient(270deg, #3b8bd0, #0b3fa4);
+    }
+
+    .deputy-main {
+        padding-bottom: 24px;
+    }
+
+    .deputy-list {
+        width: 142px;
+        height: 132px;
+        background: url(../../asster/image/2.png);
+        background-size: cover;
+        color: #2e2e2e;
+    }
+
+    .deputy-title {
+        font-size: 30px;
+        padding-top: 37px;
+    }
+
+    /*half*/
+    .box-list p {
+        margin: 0 auto;
+        margin-top: -16px;
+        width: 158px;
+        height: 36px;
+        background-color: #fff;
+        box-shadow: 0 1px 7px 0 rgb(26 83 214 / 29%);
+        z-index: 10;
+        position: relative;
+        border-radius: 5px;
+        padding-top: 8px;
+        font-size: 14px
+    }
+
+    /*box46*/
+    .box46-4 {
+        background-color: #eaecf4;
+    }
+
+    .box46-4 img {
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+
+    .box-list img {
+        width: 16px;
+        height: 16px;
+        margin-top: 4px;
+    }
+
+    /*present*/
+    .present {
+        background: url('../../asster/image/bg-info.jpg');
+        padding: 40px 0 32px 42px;
+    }
+
+    /*表格*/
+    table {
+        box-shadow: 0 0 10px 1px rgb(40 130 192 / 35%);
+        margin-top: 50px;
+    }
+
+    td,
+    th {
+        text-align: left;
+        padding: 12px 0 12px 52px !important;
+        font-size: 14px;
+    }
+
+    .rounded {
+        border: 1px solid
+    }
+
+    .bg-no-repeat {
+        background-repeat: no-repeat !important;
+        background-position: 50% !important;
+        background-size: contain !important;
+    }
+    /*lastbar*/
+    .lastbar{
+        background: url('../../asster/image/m-sec-9-bg.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    .lastbar-text{
+        margin-left: 40px;
+        font-weight: normal;
+    }
+</style>
+
+</html>

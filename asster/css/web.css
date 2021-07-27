@@ -376,3 +376,9 @@ a:hover{
 .blue-shadow{
     box-shadow: 0 1px 13px 0 rgb(26 83 214 / 18%);
 }
+/*color*/
+.border-yellow-f69 {
+    --border-opacity: 1;
+    border-color: #f69119;
+    border-color: rgba(246,145,25,var(--border-opacity));
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asster/css/app.css">
     <link rel="stylesheet" href="../../asster/css/bootstrap.css">
     <link rel="stylesheet" href="../../asster/css/web.css">
     <link rel="shortcut icon" href="../../asster/icon/favicon.ico">
@@ -294,13 +295,13 @@
                         <a href="djia.html">
                             <li class="li-active">道琼斯指数</li>
                         </a>
-                        <a href="">
+                        <a href="nasdaq-100.html">
                             <li>纳斯达克100指数</li>
                         </a>
-                        <a href="">
+                        <a href="sp-500.html">
                             <li>标普500指数</li>
                         </a>
-                        <a href="">
+                        <a href="meiyuan.html">
                             <li>美元指数</li>
                         </a>
                         <a href="">
@@ -412,10 +413,10 @@
             </div>
             <div class="mt-4 a-title">道琼斯工业平均指数是什么</div>
             <div class="mt-4 d-flex">
-                <div class="box37-3 pr-5">
-                    <img src="../../asster/image/icon2.png" alt="">
+                <div class="box46-4 pr-5">
+                    <img src="../../asster/image/icon2.png" alt="" class="">
                 </div>
-                <div class="box37-7">
+                <div class="box46-6">
                     <div>
                         <b style="color:#343434">道琼斯工业平均指数</b>（Dow Jones Industrial Average），也叫作道指（DJIA）、道琼斯工业（Dow Jones Industrial）、工业平均（Industrial Average）、Dow 30，或简单称为Dow。是一种股市指数，由Charles Dow 和 Eduard Jones于十九世纪八十年代中期创建。
                     </div>
@@ -557,7 +558,7 @@
                     <div class="mt-4 ml-4 a-title">道琼斯指数交易信息</div>
                     <ul>
                         <li><span>道琼斯指数30的波动幅度为1.00</span></li>
-                        <li><span>大部分经纪商交易道指30的保证金要求通常在0.5%左右（即200:1的杠杆）</span></li>
+                        <li><span>大部分经纪商交易道指30的保证金要求通常在0.5%左右(即200:1的杠杆)</span></li>
                         <li><span>最低手数为1张指数合约</span></li>
                         <li><span>道琼斯指数30的计价货币是<a href="#">美元</a></span></li>
                     </ul>
@@ -566,20 +567,24 @@
                     <img src="../../asster/image/piic.png" alt="">
                 </div>
             </div>
-            <div class="mt-5 a-title">热门股指推荐</div>
-            <div class="d-flex justify-content-between mt-5">
-                <a href="/trading-info/indices/hang-seng-index.html" class="jump-btn">恒生指数&gt; &gt;</a>
-                <a href="/trading-info/indices/sp-500.html" class="jump-btn">标普指数&gt; &gt;</a>
-                <a href="/trading-info/indices/nasdaq-100.html" class="jump-btn">纳斯达克指数&gt; &gt;</a>
-                <a href="/trading-info/indices/ftse-100.html" class="jump-btn">富时100指数&gt; &gt;</a>
-            </div>
-            <div class="lastbar minbox d-flex w-100 mt-5">
-                <div class="lastbar-text">
-                    <div>5分钟开立真实账户，交易道琼斯指数</div>
-                    <div style="padding-left: 100px">一键交易全球热门股指，开始您的股指交易之旅</div>
-                </div>
-                
-                <a href="#" class="green-a"><div class="green-button mr-5">注册真实账户</div></a>
+            <div class="mt-5 a-title mb-5">热门股指推荐</div>
+            <div id="djia-page">
+                <section>
+                    <div class="flex justify-between"><a href="hang-seng-index.html" class="jump-btn">恒生指数&gt; &gt;</a>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;<a href="sp-500.html" class="jump-btn">标普指数&gt; &gt;</a> &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="nasdaq-100.html"
+                            class="jump-btn">纳斯达克指数&gt; &gt;</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;<a href="ftse-100.html" class="jump-btn">富时100指数&gt;
+                            &gt;</a></div>
+                    <div class="footer-bg mt-20 flex justify-between" style="padding:29px 64px 29px 43px;">
+                        <div class="text-white text-20 font-bold" style="width: 60%;">
+                            <p>5分钟开立真实账户，交易道琼斯指数</p>
+                            <p class="text-right mt-1">一键交易全球热门股指，开始您的股指交易之旅</p>
+                        </div>
+                        <a href="#" class="animate-btn-djia jump-real-btn text-center text-18 font-bold text-white">注册真实账户</a>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
@@ -642,6 +647,7 @@
     </script>
 </body>
 <style>
+    
     .right-box {
         color: #5b5b5b;
     }
@@ -721,44 +727,36 @@
         font-size: 14px
     }
     /*box46*/
+    .box46 ul{
+        margin-left: 45px;
+        font-size: 25px;
+        list-style: initial;
+    }
     .box46 li{
         color: #1f71c0;
+        list-style: initial;
     }
     .box46 li span{
         color: #2e2e2e;
         line-height: 33px;
+        font-size: 16px;
     }
     .box46-6 .a-title{
         margin-bottom: 33px;
     }
-    /**/
-    .jump-btn {
-        display: inline-block;
-        line-height: 42px;
-        width: 210px;
-        line-height: 44px;
-        background-color: #fff;
-        border-radius: 4px;
-        border: 1px solid #3b82f2;
-        font-size: 16px;
-        letter-spacing: 1px;
-        color: #2e2e2e;
-        text-align: center;
-        transition: color .5s ease-in-out;
-        z-index: 1;
-        position: relative;
-        overflow: hidden;
-    }
-    /*lastbar*/
-    .lastbar{
-        background: url('../../asster/image/footer.png');
+    /*底*/
+    #djia-page .footer-bg {
+        background-image: url(../../asster/image/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: 50%;
     }
-    .lastbar-text{
-        font-size: 20px;
-        margin-left: 40px;
+    #djia-page .jump-real-btn {
+        height: 64px;
+        margin-top: 10px;
+    }
+    #djia-page .jump-real-btn:hover{
+        color: #3b8bd0 !important;
     }
 </style>
 
