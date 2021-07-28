@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asster/css/app.css">
+    <link rel="stylesheet" href="../../asster/css/bootstrap.css">
+    <link rel="stylesheet" href="../../asster/css/web.css">
+    <link rel="shortcut icon" href="../../asster/icon/favicon.ico">
+    <title>日经 225</title>
+</head>
+
+<body>
+    <div id="head"></div>
+    <div id="sidebar"></div>
+    <div class="bgbar">
+        <div class="bg-img">
+            <img src="../../asster/image/trading_info_banner.jpg" alt="">
+        </div>
+    </div>
+    <div class="minbox d-flex">
+        <div class="left-box">
+            <div class="left-title">
+                交易产品
+            </div>
+            <div class="left-ul">
+                <ul>
+                    <a href="#">
+                        <li class="li-a">产品综述</li>
+                    </a>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">外汇交易</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="">
+                            <li>美元/日元 - USD/JPY</li>
+                        </a>
+                        <a href="">
+                            <li>澳元/美元 - AUD/USD</li>
+                        </a>
+                        <a href="">
+                            <li>欧元/美元 - EUR/USD</li>
+                        </a>
+                        <a href="">
+                            <li>英镑/美元 - GBP/USD</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">大宗商品</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">贵金属</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">黄金</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">白银</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">铂金</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">铜</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">钯金</li>
+                            </a>
+                        </ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">农产品</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">玉米交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">咖啡交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">棉花交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">小麦交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">大豆交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">可可交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">糖交易</li>
+                            </a>
+                        </ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">能源</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">原油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">燃料油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">汽油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">天然气交易</li>
+                            </a>
+                        </ul>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">股票</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="google.html">
+                            <li>Google股票</li>
+                        </a>
+                        <a href="amazon.html">
+                            <li>亚马逊股票</li>
+                        </a>
+                        <a href="kekoukele.html">
+                            <li>可口可乐股票</li>
+                        </a>
+                        <a href="baiergp.html">
+                            <li>拜耳股票</li>
+                        </a>
+                        <a href="blkgp.html">
+                            <li>巴克莱股票</li>
+                        </a>
+                        <a href="adidasi.html">
+                            <li>阿迪达斯股票</li>
+                        </a>
+                        <a href="Apple.html">
+                            <li>苹果股票</li>
+                        </a>
+                        <a href="ATT.html">
+                            <li>AT&T股票</li>
+                        </a>
+                        <a href="bygp.html">
+                            <li>波音股票</li>
+                        </a>
+                        <a href="aksmf.html">
+                            <li>埃克森美孚股票</li>
+                        </a>
+                        <a href="disney.html">
+                            <li>华特迪士尼股票</li>
+                        </a>
+                        <a href="alibaba.html">
+                            <li>阿里巴巴股票</li>
+                        </a>
+                        <a href="jd.html">
+                            <li>京东股票</li>
+                        </a>
+                        <a href="baidu.html">
+                            <li>百度股票</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b li-active">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">股指</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="djia.html">
+                            <li>道琼斯指数</li>
+                        </a>
+                        <a href="nasdaq-100.html">
+                            <li>纳斯达克100指数</li>
+                        </a>
+                        <a href="sp-500.html">
+                            <li>标普500指数</li>
+                        </a>
+                        <a href="meiyuan.html">
+                            <li>美元指数</li>
+                        </a>
+                        <a href="nikkei-225.html">
+                            <li class="li-active">日经225</li>
+                        </a>
+                        <a href="hang-seng-index.html">
+                            <li>恒生指数</li>
+                        </a>
+                        <a href="">
+                            <li>富时A50</li>
+                        </a>
+                        <a href="">
+                            <li>CAC40指数</li>
+                        </a>
+                        <a href="">
+                            <li>DAX30指数</li>
+                        </a>
+                        <a href="">
+                            <li>FTSE100</li>
+                        </a>
+                        <a href="">
+                            <li>SPI200指数</li>
+                        </a>
+                        <a href="">
+                            <li>欧洲斯托克指数</li>
+                        </a>
+                        <a href="">
+                            <li>AEX指数</li>
+                        </a>
+                        <a href="">
+                            <li>VIX指数</li>
+                        </a>
+                        <a href="">
+                            <li>瑞士20指数</li>
+                        </a>
+                        <a href="">
+                            <li>SPAIN35</li>
+                        </a>
+                        <a href="">
+                            <li>Russell 2000指数</li>
+                        </a>
+                        <a href="">
+                            <li>INDIA 50指数</li>
+                        </a>
+                        <a href="">
+                            <li>FTSE MIB指数交易</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">差价合约</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="">
+                            <li>ETF交易</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约交易CFDs的种类</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约交易CFDs的优势</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约的交易特点</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约的发展史</li>
+                        </a>
+                    </ul>
+                </ul>
+            </div>
+            <div class="left-adv">
+                <a href="#" class="left-adv-a"><img src="../../asster/image/real-account.png" alt=""></a>
+                <a href="#" class="left-adv-b"><img src="../../asster/image/demo-account.png" alt=""></a>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="bread d-flex">
+                <div class="bread-left" style="font-size: 24px;">日经 225</div>
+                <div class="bread-right">
+                    <div class="bread-img">
+                        <img src="../../asster/icon/page_right_common.png" alt="">
+                        <span><a href="#">首页</a></span>
+                        <span> → </span>
+                        <span><a href="#">交易产品</a></span>
+                        <span> → </span>
+                        <span><a href="#">股指</a></span>
+                        <span> → </span>
+                        <span><a href="#">日经 225</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 a-title">什么是日经225指数</div>
+            <div class="mt-2 half-box">
+                <div class="half-left">
+                    <div class="mt-2">
+                        日经225指数（NIKKEI225）也被称为日本225指数，是东京证交所的股市指数。该指数第一次面世是在1950年（追溯到1949年5月）是最常被引用于衡量日本股票均值的指数。股指如今由“日本经济新闻”每日计算。
+                    </div>
+                    <div class="mt-4">
+                        股指的突出特性使得许多盈利产品与日经225指数的股票挂钩，后者是日本经济形势和变化的指标。日经指数如同美国的道琼斯一样，是加权指数，由日本来自不同行业的225家大型公开上市公司构。成这为投资者和交易员提供了对日本股市投资情绪的看法。
+                    </div>
+                </div>
+                <div class="half-right text-right">
+                    <img src="../../asster/image/pic-1.png" alt="">
+                </div>
+            </div>
+            <div class="mt-4 f-18">在AvaTrade爱华，您能够轻松地在网上交易日经225指数，并享受全球5大洲7重监管经纪商所带来的好处</div>
+            <div class="mt-4 half-box">
+                <div class="half-right">
+                    <img src="../../asster/image/pic-2.png" alt="">
+                </div>
+                <div class="half-left pl-3">
+                    <div>- 以具有竞争力的点差，交易日经225指数</div>
+                    <div class="mt-2">- 全球五大洲7重监管，饱受金融行业媒体赞誉</div>
+                    <div class="mt-2">- 杠杆灵活，最高可达100:1</div>
+                    <div class="mt-2">- 可在全球应用广泛的MT4和MT5上交易</div>
+                    <div class="mt-2">- 支持双向交易，涨跌都有盈利可能</div>
+                    <div class="mt-2">- 5x24小时，14种语言，专属一对一客户经理</div>
+                </div>
+            </div>
+            <div class="whatis-button button-link d-flex middle mt-4 mt-5">
+                <a href="#" class="green-a">
+                    <div class="green-button">开立真实账户</div>
+                </a>
+                <a href="#">
+                    <div class="blue-link">注册模拟账户</div>
+                </a>
+            </div>
+            <div class="mt-4 a-title">日经225指数（NIKKEI225）的历史</div>
+            <div class="mt-3 half-box">
+                <div class="half-left">
+                    <div class="">
+                        日经225指数在1975年到1985年，该指数最初被称为“日经道琼斯均值”，最初是二战后重建日本工业的措施之一。东京证交所成立于1878年，二战期间，日本政府与当时的几家大公司联合成立了东京证券交易所(JSE)。1945年8月下半旬二战快结束时，日本证交所关闭。1946年5月，在新《证券交易法》的支持下，东京证券交易所重新开业。
+                    </div>
+                    <div class="mt-2">
+                        20世纪80年代末，日本经历了日元快速升值的经济周期，为了对抗可能出现的经济衰退，日本政府动用了财政和货币刺激政策。在那期间，土地价值和股票价格震荡。1985-1989年期间，这些资产的价值增至三倍，并且东京证交所占到了全球股市市值的60%。
+                    </div>
+                </div>
+                <div class="half-right text-right">
+                    <img src="../../asster/image/pic-3.png" alt="">
+                </div>
+            </div>
+            <div class="mt-4">
+                1990年初，泡沫破裂下首当其冲的是日元 -
+                当年价值缩水三分之二。一直到2008年10月，日经225指数始终交投于7000下方，相较1989年12月创下的高点，下跌了80%。在日本央行和日本政府经济刺激的帮助下，股指在2012年6月到2015年6月期间反弹，但还是不到1989年高点的一半。
+            </div>
+            <div class="mt-4 a-title">日经225指数的构成</div>
+            <div class="mt-4">
+                日经225指数由自日本蓝筹股中精挑细选225支股票构成，根据年度评估，这些成分股都可以调整。一旦某家公司被判定不再是股指的成分股，就会被从股指中删除，然后加入新的股票。这个程序被称为“特别置换”。每年的9月，根据行业平衡和公司流动性进行选择，日经指数有6个行业类别，它们是从36个日经工业分类中合并而来的。
+            </div>
+            <div>
+                <div class="bg-blue-203 leading-none md:text-16px text-white md:py-3 text-center py-2 mt-12px text-12px">
+                    日经225指数代表的五大公司及其各自的市值（单位：亿美元）</div>
+                <div class="border md:text-16px text-12px border-gray-eaea md:mb-35px shadow-blue-two md:shadow-none">
+                    <div class="flex border-b border-gray-eaea py-2 md:pl-52px pl-16px pr-6px">
+                        <div class="w-45b text-gray-black">公司名称</div>
+                        <div class="w-1/3 text-gray-black">市场资本</div>
+                        <div class="w-1/3 text-gray-black">行业信息</div>
+                    </div>
+                    <div class="flex items-center border-b border-gray-eaea py-2 md:pl-52px pl-16px pr-6px">
+                        <div class="w-45b md:leading-normal leading-150">丰田汽车<br>Toyota Motor</div>
+                        <div class="w-1/3">1720亿</div>
+                        <div class="w-1/3 md:leading-normal leading-150">世界十大汽车工业公司之一</div>
+                    </div>
+                    <div class="flex items-center border-b border-gray-eaea py-2 md:pl-52px pl-16px pr-6px">
+                        <div class="w-45b md:leading-normal leading-150">三井住友<br>Sumitomo Mitsui</div>
+                        <div class="w-1/3">1170亿</div>
+                        <div class="w-1/3 md:leading-normal leading-150">日本的三大银行之一</div>
+                    </div>
+                    <div class="flex items-center border-b border-gray-eaea py-2 md:pl-52px pl-16px pr-6px">
+                        <div class="w-45b md:leading-normal leading-150">日本电报电话公司<br>NTT</div>
+                        <div class="w-1/3">913亿</div>
+                        <div class="w-1/3 md:leading-normal leading-150">全世界最大的电信公司之一</div>
+                    </div>
+                    <div class="flex items-center border-b border-gray-eaea py-2 md:pl-52px pl-16px pr-6px">
+                        <div class="w-45b md:leading-normal leading-150">都科摩<br>NTT Docomo</div>
+                        <div class="w-1/3">896亿</div>
+                        <div class="w-1/3 md:leading-normal leading-150">世界上最大的移动通信公司之一</div>
+                    </div>
+                    <div class="flex items-center py-2 md:pl-52px pl-16px pr-6px">
+                        <div class="w-45b md:leading-normal leading-150">日本电信运营商 <br>KDDI</div>
+                        <div class="w-1/3">729亿</div>
+                        <div class="w-1/3 md:leading-normal leading-150">日本的电信服务提供商</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 a-title">影响日经225指数价格的因素</div>
+            <div class="mt-3 half-box">
+                <div class="half-left">
+                    <div class="">
+                        由于历史的原因，日经225指数因为其容易出现剧烈的市场波动，暴跌，反弹和恢复，成为最不稳定的交易指数。把日经225指数与美国联结在一起的主要原因是日本对美出口。当交易日经 225指数时，关注美国市场的表现总是明智的，因为影响美国的因素很有可能将直接影响到日经指数。此外，日经225指数交易需要与跟踪美国基准及其指数走势的交易员并行。
+                    </div>
+                    <div class="mt-2">
+                        日经225指数对全球事件，比如政治动荡、战争、经济和金融消息以及自然灾害，特别敏感。像失业率、加息、GDP和新增就业等经济基准指标，尤其是日本和美国发生的这些变化，因此关注标普500指数和美元指数的动态将是明智的。
+                    </div>
+                </div>
+                <div class="half-right text-right">
+                    <img src="../../asster/image/pic-4.png" alt="">
+                </div>
+            </div>
+            <div class="mt-5 blue-shadow box46">
+                <div class="box46-6 ml-4 pb-4">
+                    <div class="mt-4 a-title">日经225指数相关交易信息</div>
+                    <div class="mt-4">最大杠杆可达到：100:1</div>
+                    <div class="mt-4">日经225指数以日元计价</div>
+                </div>
+                <div class="box46-4 text-right">
+                    
+                </div>
+            </div>
+            <div class="whatis-button button-link d-flex middle mt-4 mt-5">
+                <a href="#" class="green-a">
+                    <div class="green-button">开立日经225指数</div>
+                </a>
+                <a href="#">
+                    <div class="blue-link">注册模拟账户</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../../asster/js/jquery-3.5.1.min.js"></script>
+    <script src="../../asster/js/jquery.i18n.js"></script>
+    <script src="../../asster/js/bootstrap.js"></script>
+    <script src="../../asster/js/index.js"></script>
+    <script>
+        $(function () {
+            $('#head').load('../component/NavBar.html', function () {
+                let headSrc = document.createElement("script");
+                headSrc.src = "../../asster/js/bootstrap.js";
+                $('body').append(headSrc)
+            });
+        });
+        $(function () {
+            $('#footer').load('../component/Footer.html');
+        });
+        $(function () {
+            $('#sidebar').load('../component/sidebar.html');
+        });
+        $(function () {
+            $(".left-ul ul ul").hide();
+            $(".li-active").next().show();
+            $(".shed").hide();
+            $(".li-active .shed").show();
+            $(".li-active .add").hide();
+            $(".left-text .add").click(function () {
+                console.log($(this).parent())
+                $(this).parent().parent().parent().next().slideToggle(500);
+                $(this).toggle();
+                $(this).next().toggle();
+                $(this).parent().next().children().toggle();
+            })
+            $(".left-text .shed").click(function () {
+                $(this).parent().parent().parent().next().slideToggle(500);
+                $(this).toggle();
+                $(this).prev().toggle();
+                $(this).parent().next().children().toggle();
+            })
+            $(".left-svg").click(function () {
+                $(this).parent().parent().next().slideToggle(500);
+                $(this).children().toggle();
+                $(this).prev().children().eq(0).toggle();
+                $(this).prev().children().eq(1).toggle();
+            })
+        });
+    </script>
+</body>
+<style>
+    .right-box {
+        color: #5b5b5b;
+    }
+
+    .right-box a {
+        color: #2882c0
+    }
+
+    .right-box a:hover {
+        text-decoration: none;
+    }
+
+    .bread a {
+        color: #666666;
+    }
+
+    .a-title {
+        font-size: 26px;
+        color: #2e2e2e;
+        font-weight: bold;
+    }
+
+    .half-box {
+        line-height: 30px;
+    }
+
+    .half-left a {
+        color: #2882c0;
+    }
+
+    .f-14 {
+        font-size: 14px;
+    }
+
+    .f-18 {
+        font-weight: bold;
+        font-size: 18px;
+        color: #2e2e2e;
+    }
+
+    /*half*/
+    .box-list p {
+        margin: 0 auto;
+        margin-top: -16px;
+        width: 158px;
+        height: 36px;
+        background-color: #fff;
+        box-shadow: 0 1px 7px 0 rgb(26 83 214 / 29%);
+        z-index: 10;
+        position: relative;
+        border-radius: 5px;
+        padding-top: 8px;
+        font-size: 14px
+    }
+
+    /*box46*/
+    .aa {
+        border: 2px solid #fba50b;
+    }
+
+    .aa img {
+        top: 12px;
+        right: 12px;
+        position: relative;
+    }
+
+    .box-list img {
+        width: 16px;
+        height: 16px;
+        margin-top: 4px;
+    }
+
+    /*box46*/
+    .box46 ul {
+        margin-left: 45px;
+        font-size: 25px;
+        list-style: initial;
+    }
+
+    .box46 li {
+        color: #1f71c0;
+        list-style: initial;
+    }
+
+    .box46 li span {
+        color: #2e2e2e;
+        line-height: 33px;
+        font-size: 16px;
+    }
+
+    .box46-6 .a-title {
+        margin-bottom: 33px;
+    }
+</style>
+
+</html>
