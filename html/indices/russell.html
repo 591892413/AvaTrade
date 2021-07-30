@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asster/css/bootstrap.css">
+    <link rel="stylesheet" href="../../asster/css/web.css">
+    <link rel="shortcut icon" href="../../asster/icon/favicon.ico">
+    <title>Russell 2000指数</title>
+</head>
+
+<body>
+    <div id="head"></div>
+    <div id="sidebar"></div>
+    <div class="bgbar">
+        <div class="bg-img">
+            <img src="../../asster/image/trading_info_banner.jpg" alt="">
+        </div>
+    </div>
+    <div class="minbox d-flex">
+        <div class="left-box">
+            <div class="left-title">
+                交易产品
+            </div>
+            <div class="left-ul">
+                <ul>
+                    <a href="#">
+                        <li class="li-a">产品综述</li>
+                    </a>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">外汇交易</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="">
+                            <li>美元/日元 - USD/JPY</li>
+                        </a>
+                        <a href="">
+                            <li>澳元/美元 - AUD/USD</li>
+                        </a>
+                        <a href="">
+                            <li>欧元/美元 - EUR/USD</li>
+                        </a>
+                        <a href="">
+                            <li>英镑/美元 - GBP/USD</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">大宗商品</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">贵金属</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">黄金</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">白银</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">铂金</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">铜</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">钯金</li>
+                            </a>
+                        </ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">农产品</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">玉米交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">咖啡交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">棉花交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">小麦交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">大豆交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">可可交易</li>
+                            </a>
+                            <a href="">
+                                <li>糖交易</li>
+                            </a>
+                        </ul>
+                        <li class="li-a">
+                            <div class="left-list">
+                                <div class="left-text">
+                                    <span class="add">十</span>
+                                    <span class="shed">一</span>
+                                    <span><a href="#">能源</a></span>
+                                </div>
+                                <div class="left-svg">
+                                    <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <ul>
+                            <a href="">
+                                <li class="li-c">原油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">燃料油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">汽油交易</li>
+                            </a>
+                            <a href="">
+                                <li class="li-c">天然气交易</li>
+                            </a>
+                        </ul>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">股票</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="../StockIndex/google.html">
+                            <li>Google股票</li>
+                        </a>
+                        <a href="../StockIndex/amazon.html">
+                            <li>亚马逊股票</li>
+                        </a>
+                        <a href="../StockIndex/kekoukele.html">
+                            <li>可口可乐股票</li>
+                        </a>
+                        <a href="../StockIndex/baiergp.html">
+                            <li>拜耳股票</li>
+                        </a>
+                        <a href="../StockIndex/blkgp.html">
+                            <li>巴克莱股票</li>
+                        </a>
+                        <a href="../StockIndex/adidasi.html">
+                            <li>阿迪达斯股票</li>
+                        </a>
+                        <a href="../StockIndex/Apple.html">
+                            <li>苹果股票</li>
+                        </a>
+                        <a href="../StockIndex/ATT.html">
+                            <li>AT&T股票</li>
+                        </a>
+                        <a href="../StockIndex/bygp.html">
+                            <li>波音股票</li>
+                        </a>
+                        <a href="../StockIndex/aksmf.html">
+                            <li>埃克森美孚股票</li>
+                        </a>
+                        <a href="../StockIndex/disney.html">
+                            <li>华特迪士尼股票</li>
+                        </a>
+                        <a href="../StockIndex/alibaba.html">
+                            <li>阿里巴巴股票</li>
+                        </a>
+                        <a href="../StockIndex/jd.html">
+                            <li>京东股票</li>
+                        </a>
+                        <a href="../StockIndex/baidu.html">
+                            <li>百度股票</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b li-active">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">股指</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="djia.html">
+                            <li>道琼斯指数</li>
+                        </a>
+                        <a href="nasdaq-100.html">
+                            <li>纳斯达克100指数</li>
+                        </a>
+                        <a href="sp-500.html">
+                            <li>标普500指数</li>
+                        </a>
+                        <a href="meiyuan.html">
+                            <li>美元指数</li>
+                        </a>
+                        <a href="nikkei-225.html">
+                            <li>日经225</li>
+                        </a>
+                        <a href="hang-seng-index.html">
+                            <li>恒生指数</li>
+                        </a>
+                        <a href="fushia50.html">
+                            <li>富时A50</li>
+                        </a>
+                        <a href="cac-40.html">
+                            <li>CAC40指数</li>
+                        </a>
+                        <a href="dax-30.html">
+                            <li>DAX30指数</li>
+                        </a>
+                        <a href="ftse-100.html">
+                            <li>FTSE100</li>
+                        </a>
+                        <a href="asx-200.html">
+                            <li>SPI200指数</li>
+                        </a>
+                        <a href="stoxx50.html">
+                            <li>欧洲斯托克指数</li>
+                        </a>
+                        <a href="aex.html">
+                            <li>AEX指数</li>
+                        </a>
+                        <a href="vix.html">
+                            <li>VIX指数</li>
+                        </a>
+                        <a href="smi.html">
+                            <li>瑞士20指数</li>
+                        </a>
+                        <a href="IBEX35.html">
+                            <li>SPAIN35</li>
+                        </a>
+                        <a href="russell.html">
+                            <li class="li-active">Russell 2000指数</li>
+                        </a>
+                        <a href="nifty.html">
+                            <li>INDIA 50指数</li>
+                        </a>
+                        <a href="ftsemib.html">
+                            <li>FTSE MIB指数交易</li>
+                        </a>
+                    </ul>
+                    <li class="li-a li-b">
+                        <div class="left-list">
+                            <div class="left-text">
+                                <span class="add">十</span>
+                                <span class="shed">一</span>
+                                <a href="#">差价合约</a>
+                            </div>
+                            <div class="left-svg">
+                                <svg class="shed" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <svg class="add" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <ul>
+                        <a href="">
+                            <li>ETF交易</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约交易CFDs的种类</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约交易CFDs的优势</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约的交易特点</li>
+                        </a>
+                        <a href="">
+                            <li>差价合约的发展史</li>
+                        </a>
+                    </ul>
+                </ul>
+            </div>
+            <div class="left-adv">
+                <a href="#" class="left-adv-a"><img src="../../asster/image/real-account.png" alt=""></a>
+                <a href="#" class="left-adv-b"><img src="../../asster/image/demo-account.png" alt=""></a>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="bread d-flex">
+                <div class="bread-left" style="font-size: 24px;">Russell 2000指数</div>
+                <div class="bread-right">
+                    <div class="bread-img">
+                        <img src="../../asster/icon/page_right_common.png" alt="">
+                        <span><a href="#">首页</a></span>
+                        <span> → </span>
+                        <span><a href="#">交易产品</a></span>
+                        <span> → </span>
+                        <span><a href="#">股指</a></span>
+                        <span> → </span>
+                        <span><a href="#">Russell 2000指数</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <img src="../../asster/image/63ce871f6d7e7f0b07ce6ac89c1b9388.jpg" alt="" class="w-100 p-2">
+            </div>
+            <div class="mt-4 a-title">一、Russell 2000指数是什么？</div>
+            <div class="mt-4">
+                Russell 2000指数衡量Russell 3000指数中2000余只小盘股的表现，发布于1984年，并且与OTC市场集团、纳斯达克和纽约证券交易所有关联。此文发稿时，Russell
+                2000指数中有1983只成份股。该指数采用自由流通股市值加权的计算方法。
+            </div>
+            <div class="mt-4">
+                Russell 2000被视为美国小盘股的基准股指，自Russell 3000指数（涵盖美国3000只左右市值最大的股票）中挑选出来的市值最小的2000只股票。
+            </div>
+            <div class="mt-4">
+                Russell 2000由伦敦证券交易所（LSE）集团的旗下的FTSE Russell运营。标普500指数等是美国大盘股的基准股指，而Russell 2000指数是在美国上市的中小盘股的首选指数。
+            </div>
+            <div class="mt-4">
+                截至2017年12月31日，Russell 2000指数的市值平均值为24亿美元，市值中间值为8.61亿美元。Russell 2000指数于2013年5月首次站上1000。
+            </div>
+            <div class="mt-4">
+                Russell 2000 index指数的交易代码为^RUT，历史高点（收盘价）为2018年1月23日创下的1610.71，盘中高点为2018年1月24日创下的1615.52。
+            </div>
+            <div class="mt-4 font-weight-bold">➤是时候试用我们提供100,000模拟金的模拟账户了。</div>
+            <div class="whatis-button button-link d-flex middle mt-5">
+                <a href="#" class="green-a">
+                    <div class="green-button">开立真实账户</div>
+                </a>
+                <a href="#">
+                    <div class="blue-link">注册模拟账户</div>
+                </a>
+            </div>
+            <div class="mt-4 a-title">二、Russell 2000在各个时期的表现</div>
+            <div class="mt-4">
+                最近几年，Russell 2000指数上涨力度非凡，与美国整体股指的表现一致。已公布的年度回报请看下方：
+            </div>
+            <div class="mt-4">
+                • 2012年 – 价格回报为14.63%，总回报为16.35%
+            </div>
+            <div class="mt-4">
+                • 2013年- 价格回报为37.00%，总回报为38.82%
+            </div>
+            <div class="mt-4">
+                • 2014年- 价格回报为3.53%，总回报为4.89%
+            </div>
+            <div class="mt-4">
+                • 2015年 - 价格回报为-5.71%，总回报为-4.41%
+            </div>
+            <div class="mt-4">
+                • 2016年 - 价格回报为19.48%，总回报为21.31%
+            </div>
+            <div class="mt-4">
+                • 2017年 - 价格回报为13.14%，总回报为14.65%
+            </div>
+            <div class="mt-4">
+                Russell 3000指数中市值最小的2000只股票，即Russell 2000指数的表现符合美国股市的整体表现。事实也证明该指数对世界各国的交易者都极具诱惑力。
+            </div>
+            <div class="mt-4">
+                <iframe
+                    src="https://tvc-cncdn.investing.com/tool/1.12.9/tool-prod-2-ssl.html?carrier=97b0f6701087d9bb6fe497cd1d195c9a&amp;time=1627630231&amp;domain_ID=1&amp;lang_ID=1&amp;timezone_ID=7&amp;version=1.12.9&amp;locale=en&amp;timezone=America/New_York&amp;pair_ID=14202&amp;interval=5&amp;session=24x7&amp;prefix=www&amp;suffix=&amp;client=0&amp;user=&amp;plotStyle=area&amp;geoc=CN&amp;styleOverride="
+                    frameborder="0" scrolling="no" seamless="seamless" style="width: 800px; height:478px;"
+                    class=""></iframe>
+                <span style="font-size: 11px;color: #333333;text-decoration: none;">Technical charts are powered by <a
+                        href="https://www.investing.com/" rel="nofollow" target="_blank"
+                        style="font-size: 11px;color: #06529D; font-weight: bold;"
+                        class="underline_link">Investing.com</a> &amp; <a href="http://www.tradingview.com/"
+                        rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;"
+                        class="underline_link">TradingView</a>.</span>
+            </div>
+            <div class="mt-4 a-title">三、为什么交易Russell 2000指数差价合约</div>
+            <div class="mt-4">
+                • 交易者可以通过追踪Russell 2000指数的价格（上涨或下跌）交易衍生品
+            </div>
+            <div class="mt-4">
+                • 交易者可以在多个顶级交易平台，比如网页版、移动设备版、苹果Mac电脑、自动在线交易与 Meta Trader 5中进行选择
+            </div>
+            <div class="mt-4">
+                • 交易者能够做空或做多Russell 2000指数，而且即使市场价格下跌也有可能获利
+            </div>
+            <div class="mt-4">
+                • AvaTrade 澳洲对Russell 2000指数差价合约在线交易收取零佣金
+            </div>
+            <div class="mt-4 a-title">四、Russell 2000指数的构成与计算方法</div>
+            <div class="mt-4">
+                Russell 2000指数是最大的小盘股指数，交易Russell 3000指数中市值最小的2000只股票。再提醒一次，Russell
+                3000指数是衡量在美国上市的3000只一流公司表现的指数。在每年6月的最后一个交易日，该股指展开一次调整。此时，多种小盘股基金与追踪Russell的基金会推升市场活跃度。
+            </div>
+            <div class="mt-4">
+                截至2012年8月，iShares Russell 2000指数是全球交易第二活跃的ETF。（截至2018年1月31日）Russell 2000指数的前10大成份股分别为：Ralcorp Holdings
+                Inc、 Myriad Genetics Inc、 Alexion Pharmaceuticals Inc、 Waste Connections Inc、 Piedmont Natural Gas
+                Company, Inc、 Realty Income Corporation 和 OSI。
+            </div>
+            <div class="mt-4">
+                美国市场最大的3000家公司被自动重新排列组合后构成Russell 3000指数，而Russell 2000指数由前者市值在第二梯队的2000家公司构成，市值在第一梯队的1000家公司构成Russell
+                1000指数。
+            </div>
+            <div class="mt-4 font-weight-bold">
+                Russell 2000指数的合格成份股基于多个规定的特点，包括如下：
+            </div>
+            <div class="mt-4">
+                • 业务仅面向本国
+            </div>
+            <div class="mt-4">
+                • 股票描述必须合规
+            </div>
+            <div class="mt-4">
+                • 交易要求，即，只在美国交易所上市
+            </div>
+            <div class="mt-4">
+                • 在5月排名日的最低收盘价为1.00美元
+            </div>
+            <div class="mt-4">
+                • 最小总市值为3000万美元
+            </div>
+            <div class="mt-4">
+                • 5%以上最低可供交易股票数量/自由流通股数量
+            </div>
+            <div class="mt-4">
+                • 无权利金信托、无美国有限责任公司、无已关闭投资公司
+            </div>
+            <div class="mt-4">
+                • 不包括可转优先股或优先股
+            </div>
+            <div class="mt-4">
+                *请注意，目前有14个Russell美国指数可供澳大利亚交易者交易。
+            </div>
+            <div class="whatis-button button-link d-flex middle mt-5">
+                <a href="#" class="green-a">
+                    <div class="green-button">开立真实账户</div>
+                </a>
+                <a href="#">
+                    <div class="blue-link">注册模拟账户</div>
+                </a>
+            </div>
+            <div class="mt-4 text-center">Russell 2000指数前10大成份股</div>
+            <div>
+                <table>
+                    <tbody>
+                        <tr class="firstRow">
+                            <th width="201"><strong>公司名称</strong></th>
+                            <th width="201"><strong>所处行业</strong></th>
+                            <th width="201"><strong>权重 (%)</strong></th>
+                        </tr>
+                        <tr>
+                            <td width="201"><strong>Cascadian Therapeutics Incorporated</strong></td>
+                            <td width="201">生物科技</td>
+                            <td width="201">0.007%</td>
+                        </tr>
+                        <tr>
+                            <td width="201"><strong>Eastman Kodak Company</strong></td>
+                            <td width="201">科技</td>
+                            <td width="201">0.006%</td>
+                        </tr>
+                        <tr>
+                            <td width="201"><strong>Atara Biotherapeutics</strong></td>
+                            <td width="201">生物科技</td>
+                            <td width="201">0.021%</td>
+                        </tr>
+                        <tr>
+                            <td width="201"><strong>Iovance Biotherapeutics</strong></td>
+                            <td width="201">生物科技</td>
+                            <td width="201">0.020%</td>
+                        </tr>
+                        <tr>
+                            <td width="201"><strong>Jounce Therapeutics</strong></td>
+                            <td width="201">医疗保健</td>
+                            <td width="201">0.011%</td>
+                        </tr>
+                        <tr>
+                            <td width="201"><strong>RAIT Financial Trust</strong></td>
+                            <td width="201">金融服务</td>
+                            <td width="201">0.003%</td>
+                        </tr>
+                        <tr>
+                            <td width="201"><strong>Novelion Therapautics</strong></td>
+                            <td width="201">生物制药</td>
+                            <td width="201">0.005%</td>
+                        </tr>
+                        <tr>
+                            <td width="201"><strong>Novavax</strong></td>
+                            <td width="201">生物科技</td>
+                            <td width="201">0.016%</td>
+                        </tr>
+                        <tr>
+                            <td width="201"><strong>Madrigal Pharmaceuticals</strong></td>
+                            <td width="201">生物科技</td>
+                            <td width="201">0.009%</td>
+                        </tr>
+                        <tr>
+                            <td width="201"><strong>PTC Therapeutics</strong></td>
+                            <td width="201">制药</td>
+                            <td width="201">0.039%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-3">
+                *请注意：构成前10大公司的股票及其百分比权重根据FTSE Russell提供的数据每日都会变化.
+            </div>
+            <div class="mt-4 text-center">Russell 2000指数前5大板块</div>
+            <div class="">
+                <table width="606">
+                    <tbody>
+                        <tr class="firstRow">
+                            <th width="294"><strong>板块名称</strong></th>
+                            <th width="312"><strong>权重 (%)</strong></th>
+                        </tr>
+                        <tr>
+                            <td width="294"><strong>金融服务</strong></td>
+                            <td width="312">17.78%</td>
+                        </tr>
+                        <tr>
+                            <td width="294"><strong>医疗保健</strong></td>
+                            <td width="312">15.35%</td>
+                        </tr>
+                        <tr>
+                            <td width="294"><strong>耐用品</strong></td>
+                            <td width="312">15.38%</td>
+                        </tr>
+                        <tr>
+                            <td width="294"><strong>科技</strong></td>
+                            <td width="312">16.64%</td>
+                        </tr>
+                        <tr>
+                            <td width="294"><strong>休闲消费</strong></td>
+                            <td width="312">12.51%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-3">
+                *请注意: 这五大板块的百分比权重基于整体市场活动每日会变化.
+            </div>
+            <div class="mt-4">
+                基于Russell 2000指数的衍生品称为iShares Russell 2000指数基金，追踪Russell 2000指数的表现。
+            </div>
+            <div class="mt-5 a-title">五、影响Russell 2000指数走势的因素</div>
+            <div class="mt-4">
+                Russel 2000是一个宽基指数，拥有相对均衡的行业代表性。利率波动、通胀率、就业数据、制造业PMI、非农就业等宏观经济变量能够影响美国金融市场各板块个股以其它要件的走势。
+            </div>
+            <div class="mt-4">
+                大量相互关联、不相关或随机的事件驱动着Russel 2000指数的价位与个股、板块的权重。货币强弱、特别是与<a href="#">大宗商品</a>有关的货币的强弱，是决定需求的重大因素，原因在于强势美元降低对黄金、<a href="#">铂金</a>、铜、铁矿石等大宗商品的买需，反之亦然。美元指数是美元强弱的指标，也可用作衡量做多或做空Russel 2000指数可行性的经济指标。
+            </div>
+            <div class="mt-4">
+                多个因素可以决定Russel 2000指数的价位，包括市场情绪的转变、投机行为、市场修正、朝鲜、中东与中国等的地缘政治紧张局势。这些因素综合起来有时候以不可思议的方式，提高或降低Russel 2000指数的价格。
+            </div>
+            <div class="mt-4">
+                Russel 2000指数仍是交易顶级美国企业的最具吸引力的中短期指数之一，是美国市场的晴雨表，并且交易者能够利用差价合约等衍生品交易产品，同步Russel 2000指数的波动。
+            </div>
+            <div class="mt-4 a-title">
+                六、在AvaTrade 澳洲交易Russell 2000指数差价合约的优势
+            </div>
+            <div class="mt-4">
+                • AvaTrade为新手与专业交易者等提供综合教学中心
+            </div>
+            <div class="mt-4">
+                • 杰出的多语消费者服务
+            </div>
+            <div class="mt-4">
+                • 金融产品具有竞争力的点差
+            </div>
+            <div class="mt-4">
+                • 全面持牌、完全规范
+            </div>
+            <div class="mt-4">
+                • 专业的账户经理人，引导您踏实地迈出前几步
+            </div>
+            <div class="mt-4">
+                • 交易者可以在<a href="#">外汇模拟</a>账户上以最高10万美金的虚拟资金进行练习
+            </div>
+            <div class="mt-4">
+                • 精选高级交易平台，包括面向移动设备的<a href="#">AvaTradeGO</a>应用程序
+            </div>
+            <div class="mt-4">➤立即注册模拟账户送10万模拟金</div>
+            <div class="whatis-button button-link d-flex middle mt-5">
+                <a href="#" class="green-a">
+                    <div class="green-button">开立真实账户</div>
+                </a>
+                <a href="#">
+                    <div class="blue-link">注册模拟账户</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../../asster/js/jquery-3.5.1.min.js"></script>
+    <script src="../../asster/js/jquery.i18n.js"></script>
+    <script src="../../asster/js/bootstrap.js"></script>
+    <script src="../../asster/js/index.js"></script>
+    <script>
+        $(function () {
+            $('#head').load('../component/NavBar.html', function () {
+                let headSrc = document.createElement("script");
+                headSrc.src = "../../asster/js/bootstrap.js";
+                $('body').append(headSrc)
+            });
+        });
+        $(function () {
+            $('#footer').load('../component/Footer.html');
+        });
+        $(function () {
+            $('#sidebar').load('../component/sidebar.html');
+        });
+        $(function () {
+            $(".left-ul ul ul").hide();
+            $(".li-active").next().show();
+            $(".shed").hide();
+            $(".li-active .shed").show();
+            $(".li-active .add").hide();
+            $(".left-text .add").click(function () {
+                console.log($(this).parent())
+                $(this).parent().parent().parent().next().slideToggle(500);
+                $(this).toggle();
+                $(this).next().toggle();
+                $(this).parent().next().children().toggle();
+            })
+            $(".left-text .shed").click(function () {
+                $(this).parent().parent().parent().next().slideToggle(500);
+                $(this).toggle();
+                $(this).prev().toggle();
+                $(this).parent().next().children().toggle();
+            })
+            $(".left-svg").click(function () {
+                $(this).parent().parent().next().slideToggle(500);
+                $(this).children().toggle();
+                $(this).prev().children().eq(0).toggle();
+                $(this).prev().children().eq(1).toggle();
+            })
+        });
+    </script>
+</body>
+<style>
+    .right-box {
+        color: #666666;
+    }
+
+    .right-box a {
+        color: #2882c0
+    }
+
+    .bread a {
+        color: #666666;
+    }
+
+    .a-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .f-14 {
+        font-size: 14px;
+
+    }
+
+    .blue-shadow {
+        box-shadow: 0 0 10px 1px rgb(40 130 192 / 35%);
+    }
+
+    .half-box {
+        line-height: 24px;
+    }
+
+    .half-left a {
+        color: #2882c0;
+    }
+
+    /*table*/
+    table {
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 0;
+        border: 1px solid #f1f1f1;
+    }
+
+    tbody th,
+    tbody td {
+        padding: 0.5rem 0.625rem 0.625rem;
+    }
+
+    tbody tr:nth-child(even) {
+        border-bottom: 0;
+        background-color: #f1f1f1;
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #fff;
+    }
+</style>
+
+</html>
