@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../asster/css/bootstrap.css">
-    <link rel="stylesheet" href="../../asster/css/app.css">
     <link rel="stylesheet" href="../../asster/css/web.css">
     <link rel="shortcut icon" href="../../asster/icon/favicon.ico">
-    <title>交易条款</title>
+    <title>节假日通知</title>
 </head>
 
 <body>
@@ -27,7 +26,7 @@
             </div>
             <div class="left-ul">
                 <ul>
-                    <li class="li-a li-b li-active">
+                    <li class="li-a li-b">
                         <div class="left-list">
                             <div class="left-text">
                                 <span class="add">十</span>
@@ -49,14 +48,14 @@
                         </div>
                     </li>
                     <ul>
-                        <a href="conditions-list.html">
-                            <li>条款细则</li>
+                        <a href="">
+                            <li class="li-a">条款细则</li>
                         </a>
                     </ul>
                     <a href="#">
                         <li class="li-a">差价合约展期</li>
                     </a>
-                    <li class="li-a li-b">
+                    <li class="li-a li-b li-active">
                         <div class="left-list">
                             <div class="left-text">
                                 <span class="add">十</span>
@@ -79,9 +78,9 @@
                     </li>
                     <ul>
                         <a href="holiday.html">
-                            <li class="">节假日通知</li>
+                            <li class="li-active">节假日通知</li>
                         </a>
-                        <a href="">
+                        <a href="WinSum.html">
                             <li class="">冬/夏令时</li>
                         </a>
                     </ul>
@@ -133,9 +132,9 @@
                 <a href="#" class="left-adv-b"><img src="../../asster/image/demo-account.png" alt=""></a>
             </div>
         </div>
-        <div class="right-box" id="app">
+        <div class="right-box">
             <div class="bread d-flex">
-                <div class="bread-left" style="font-size: 24px;">交易条款</div>
+                <div class="bread-left" style="font-size: 24px;">节假日通知</div>
                 <div class="bread-right">
                     <div class="bread-img">
                         <img src="../../asster/icon/page_right_common.png" alt="">
@@ -143,34 +142,17 @@
                         <span> → </span>
                         <span><a href="#">交易信息</a></span>
                         <span> → </span>
-                        <span><a href="#">交易条款</a></span>
+                        <span><a href="#">交易时间</a></span>
+                        <span> → </span>
+                        <span><a href="#">节假日通知</a></span>
                     </div>
                 </div>
             </div>
-            <div class="md:hidden md:mt-0 mt-52px">
-                <div class="px-4 mb-2">
-                    <span class="text-12 text-blue-3e8 border-b border-blue-3e8 pb-1">交易条款</span>
-                </div>
+            <div class="mt-4">
+                爱华AvaTrade致力于为全球客户提供优质的服务。为了更好地为您提供服务，我们的客户经理精通14种语言。只要您可以通过电话、以及线上客服联系到我们。我们的市场常年是周一至周五，24小时开放。仅仅是在全球规定的节假日无法进行交易的时候才关闭市场。
             </div>
-            <div class="page_content_right md:w-936px w-auto">
-                <div class="md:pb-100px md:pt-30px px-3 md:px-0 text-page-content text-grey-666">
-                    <div id="trading-conditions">
-                        <p class="hide">下面的这段
-                            &nbsp; &nbsp;
-                            &nbsp; &nbsp;标签请不要删除</p>
-                        <trading-conditions></trading-conditions>
-                        <p style="white-space: normal; font-size: 14px;"><strong><br></strong></p>
-                        <p style="white-space: normal; font-size: 14px;"><strong>交易提示：</strong></p>
-                        <p>** 鉴于近期市场波动性高，AvaTrade将根据市场情况适时调整部分品种的保证金需求水平，以上“交易条款”仅供参考。</p>
-                        <p style="margin-bottom: 0px; white-space: normal; line-height: 24px;"><span
-                                style="font-size: 14px; font-family: 微软雅黑, sans-serif; color: rgb(31, 56, 100);">*</span><span
-                                style="font-size: 14px; font-family: 微软雅黑, sans-serif; color: rgb(31, 56, 100);">由于银行间结算时的流动性限制，外汇品种可能在每日GMT时间22点（美国夏令时期间GMT时间21点）左右出现短暂（数分钟）无法交易的情况</span>
-                        </p>
-                        <p style="white-space: normal; font-size: 14px;">风险提示:基于保证金的差价合约交易有高风险，可能不适合所有投资者</p>
-                        <p style="white-space: normal; font-size: 14px;">其他详情说明，请参考“<a
-                                href="javascript:;">条款细则</a>”</p>
-                    </div>
-                </div>
+            <div class="mt-4 font-weight-bold f-18">
+                节假日交易时间表是非常重要的。本月的交易时间，<a href="../../asster/pdf/market-holiday-word-aug-2021.pdf" target="blank">请点击这里</a> .
             </div>
         </div>
     </div>
@@ -219,11 +201,7 @@
                 $(this).prev().children().eq(1).toggle();
             })
         });
-        window.AVA = {
-            "api_url": "https:\/\/www.avatrade.cn",
-        }
     </script>
-    <script src="../../asster/js/app1.js"></script>
 </body>
 <style>
     .right-box {
@@ -231,11 +209,13 @@
     }
 
     .right-box a {
-        color: #2882c0
+        color: #0000ff;
+        text-decoration: underline;
     }
 
     .bread a {
         color: #666666;
+        text-decoration: none;
     }
 
     .a-title {
@@ -243,65 +223,8 @@
         font-weight: bold;
     }
 
-    /*表格*/
-    #app ul.nav[data-v-54a02011] {
-        width: 90%;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 10px;
-    }
-
-    #app ul.nav li a[data-v-54a02011] {
+    .f-18{
         font-size: 18px;
-        color: #000;
-    }
-
-    #app ul.nav li a.active[data-v-54a02011] {
-        color: #e24e21 !important;
-    }
-
-    #app table.table[data-v-adee0600] {
-        width: 100%;
-        margin: 0 auto;
-        border: 1px solid gray;
-    }
-
-    #app table.table thead[data-v-adee0600] {
-        line-height: 30px;
-        background: #b1afaf;
-        color: #231616;
-    }
-
-    #app table.table thead tr[data-v-adee0600] {
-        text-align: center;
-    }
-
-    #app table.table tbody tr[data-v-adee0600] {
-        text-align: center;
-        line-height: 25px;
-    }
-
-    #app table.table tbody tr[data-v-adee0600]:nth-child(odd) {
-        background: #F4F4F4;
-    }
-    #app .table thead th{
-        padding: 0;
-        vertical-align: middle;
-    }
-    #app .table th, .table td{
-        padding: 8px 10px 10px;
-        vertical-align: middle;
-    }
-    #app .nav-tabs {
-        border-bottom: 0;
-    }
-    #app .nav-link{
-        border: 0 !important;
-        color: #000 !important;
-        font-weight: normal;
-    }
-    #app .nav-link:hover{
-        color: #000 !important;
     }
 </style>
 
