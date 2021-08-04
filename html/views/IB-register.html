@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asster/css/bootstrap.css">
+    <link rel="stylesheet" href="../../asster/css/web.css">
+    <link rel="shortcut icon" href="../../asster/icon/favicon.ico">
+    <title>代理人计划</title>
+</head>
+
+<body>
+    <div id="head"></div>
+    <div id="sidebar"></div>
+    <div class="topsc">
+        <div class="minbox d-flex">
+            <div class="topsc-left text-white font-weight-bold">
+                <div class="topsc-title">合作共赢</div>
+                <div class="topsc-title2">全方位免费培训 专属活动特别定制</div>
+            </div>
+            <div class="topsc-right">
+                <div class="topsc-right-title">立即与AVA爱华合作</div>
+                <input type="text" placeholder="姓名" class="">
+                <input type="text" placeholder="电话号码" class="">
+                <div class="topsc-code">
+                    <input type="text" placeholder="姓名" class="">
+                    <a href="#">获取验证码</a>
+                </div>
+                <input type="text" placeholder="邮箱" class="">
+                <div class="topsc-button">
+                    <a href="#">点击领百万现金</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../../asster/js/jquery-3.5.1.min.js"></script>
+    <script src="../../asster/js/jquery.i18n.js"></script>
+    <script src="../../asster/js/bootstrap.js"></script>
+    <script src="../../asster/js/index.js"></script>
+    <script>
+        $(function () {
+            $('#head').load('../component/NavBar.html', function () {
+                let headSrc = document.createElement("script");
+                headSrc.src = "../../asster/js/bootstrap.js";
+                $('body').append(headSrc)
+            });
+        });
+        $(function () {
+            $('#footer').load('../component/Footer.html');
+        });
+        $(function () {
+            $('#sidebar').load('../component/sidebar.html');
+        });
+    </script>
+</body>
+<style>
+    /*topsc*/
+    .minbox{
+        color: #343434;
+    }
+    .topsc{
+        background: url('../../asster/icon/pc-banner-bg.jpg');
+        padding: 1px 0;
+    }
+    .topsc-title{
+        padding-top:40px;
+        font-size: 58px;
+        margin-bottom: 40px;
+    }
+    .topsc-title2{
+        font-size: 36px;
+    }
+    .topsc-right{
+        padding: 24px 16px;
+        background: #fff;
+        width: 360px;
+        border-radius: 10px;
+    }
+    .topsc-right-title{
+        font-size: 26px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .topsc-right input{
+        width: 100%;
+        border-radius: 5px;
+        border: #e2e8f0 1px solid;
+        height: 48px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        outline: none;
+    }
+    .topsc-button a{
+        padding: 16px 0;
+        text-align: center;
+        border-radius: 5px;
+        background: #f29900;
+        width: 328px;
+        display: block;
+        font-size: 20px;
+        color: #fff
+    }
+    .topsc-button a:hover{
+        text-decoration: none;
+    }
+    .topsc-code{
+        width: 100%;
+        border-radius: 5px;
+        border: #e2e8f0 1px solid;
+        margin-bottom: 20px;
+    }
+    .topsc-code input{
+        width: 50%;
+        border: 0;
+        margin-bottom: 0;
+    }
+    .topsc-code a{
+        text-align: center;
+        display: inline-block;
+        width: 45%;
+        border-left: 2px solid #e2e8f0;
+        color: #999999
+    }
+    .topsc-code a:hover{
+        text-decoration: none;
+    }
+</style>
+
+</html>
