@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asster/css/bootstrap.css">
+    <link rel="stylesheet" href="../../asster/css/web.css">
+    <link rel="shortcut icon" href="../../asster/icon/favicon.ico">
+    <title>代理人计划</title>
+</head>
+
+<body>
+    <div id="head"></div>
+    <div id="sidebar"></div>
+    <div class="topbg">
+        <div class="topbg-main">
+            <div class="topbg-title">
+                <img src="../../asster/image/text.png" alt="">
+            </div>
+            <div class="topbg-title2">通过讲座，您将可以了解到：</div>
+            <div class="topbg-imgbox d-flex text-center">
+                <div class="topbg-imglist">
+                    <img src="../../asster/icon/web-icon1.png" alt="">
+                    <div class="f-14">近期重大事件回顾</div>
+                </div>
+                <div class="topbg-imglist">
+                    <img src="../../asster/icon/web-icon2.png" alt="">
+                    <div class="f-14">潜在价格形态、重要价位</div>
+                </div>
+                <div class="topbg-imglist">
+                    <img src="../../asster/icon/web-icon3.png" alt="">
+                    <div class="f-14">未来市场关注焦点</div>
+                </div>
+                <div class="topbg-imglist">
+                    <img src="../../asster/icon/web-icon4.png" alt="">
+                    <div class="f-14">一对一答疑</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="half-box minbox">
+        <div class="half-left">
+            <div class="a-title">技术分析互动讲座</div>
+            <div class="mt-4">
+                帮助您看清趋势，判断行情，用过去的价格变动，预测将来的动向。分析师将用其成熟和丰富的交易经验，帮助投资者更好地把握交易机会
+            </div>
+            <div class="mt-4">
+                时间：每周四晚 20:00-21:00
+            </div>
+        </div>
+        <div class="half-right">
+            <div class="a-title">报名参课</div>
+            <div class="mt-3">
+                <span>姓名</span>
+                <input type="text">
+            </div>
+            <div class="mt-3">
+                <span>电话</span>
+                <input type="text">
+            </div>
+            <div class="mt-3 d-flex">
+                <span>验证码</span>
+                <div class="code d-flex">
+                    <input type="text">
+                    <a class="come">获取验证码</a>
+                </div>
+            </div>
+            <div class="mt-3">
+                <span>邮箱</span>
+                <input type="text">
+            </div>
+            <div class="or-button">
+                <a href="#">点击报名</a>
+            </div>
+            <div class="mt-2 f-14 text-black-50">
+                (请您填写真实的联系方式，以便及时获取参课链接)
+            </div>
+        </div>
+    </div>
+    <div class="bot-section">
+        <div class="minbox">
+            <div class="a-title">免责声明</div>
+            <ul>
+                <li><span>本网络研讨会中披露的任何资本市场和交易信息仅供参考，不应被解释或应用为投资建议、推荐或建议</span></li>
+                <li><span>差价合约是复杂的金融产品，由于杠杆作用而导致存在快速亏损的高风险。71%的散户投资者在与该经纪商进行差价合约交易时会出现账<br>户亏损。您应该考虑是否了解差价合约的运作方式，以及您是否有能力承担蒙受损失的高风险</span></li>
+                <li><span>请在www.avatrade.cn官方网站上阅读我们的完整风险披露声明</span></li>
+                <li>
+                    <span>
+                        <b>监管机构信息</b>
+                        <div class="mt-4"><span> - </span>&nbsp欧盟：爱尔兰央行CBI（监管号：C53877） </div>
+                        <div><span> - </span>&nbsp澳大利亚：证券投资委员会ASIC (监管号：406684）</div>
+                        <div><span> - </span>&nbsp日本：日本金融监管厅FSA （监管号：1662） 金融期货协会FFAJ（监管号：1574）</div>
+                        <div><span> - </span>&nbsp英属维京群岛BVI：金融服务委员会FSC</div>
+                        <div><span> - </span>&nbsp南非：金融服务委员会FSCA（监管号：45984）</div>
+                        <div><span> - </span>&nbspFriedberg Direct：加拿大投资业监管组织IIROC</div>
+                        <div><span> - </span>&nbsp阿布扎比：金融监管服务局FSRA（监管号：190018）</div>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../../asster/js/jquery-3.5.1.min.js"></script>
+    <script src="../../asster/js/jquery.i18n.js"></script>
+    <script src="../../asster/js/bootstrap.js"></script>
+    <script src="../../asster/js/index.js"></script>
+    <script>
+        $(function () {
+            $('#head').load('../component/NavBar.html', function () {
+                let headSrc = document.createElement("script");
+                headSrc.src = "../../asster/js/bootstrap.js";
+                $('body').append(headSrc)
+            });
+        });
+        $(function () {
+            $('#footer').load('../component/Footer.html');
+        });
+        $(function () {
+            $('#sidebar').load('../component/sidebar.html');
+        });
+    </script>
+</body>
+<style>
+    /*topbg*/
+    .topbg{
+        background: url('../../asster/image/pc-banner-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 120px 0;
+        color: #2e2e2e;
+    }
+    .topbg-main{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .topbg-title2{
+        padding: 60px 0;
+        font-size: 24px;
+    }
+    .topbg-imglist{
+        margin-right: 40px;
+    }
+    .f-14{
+        font-size: 14px;
+    }
+    .topbg-imglist img{
+        margin-bottom: 10px;
+    }
+    /*half*/
+    .a-title{
+        font-size: 24px;
+    }
+    .half-left{
+        padding-right: 175px;
+    }
+    .half-right span{
+        margin-right: 30px;
+    }
+    .half-right input{
+        outline: none;
+        width: 400px;
+        padding-left: 12px;
+        height: 40px;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+    }
+    .code{
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+    }
+    .code input{
+        width: 250px;
+        border: none;
+    }
+    .d-flex span{
+        margin-right: 18px;
+        line-height: 40px
+    }
+    .code a{
+        width: 150px;
+        text-align: center;
+        line-height: 40px;
+        color: #999999;
+        cursor: pointer;
+        border-left: 2px solid #e5e5e5
+    }
+    .code a:hover{
+        text-decoration: none;
+    }
+    .or-button a{
+        display: block;
+        padding: 8px 24px 0;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #f78b04;
+        width: 160px;
+        margin-top: 20px;
+        color: #fff;
+        text-align: center;
+    }
+    .or-button a:hover{
+        text-decoration: none;
+    }
+    /*bot*/
+    .bot-section{
+        background: #f4fcff;
+        padding: 1px 0;
+    }
+    .bot-section ul{
+        padding-left: 20px;
+    }
+    .bot-section li{
+        margin-bottom: 30px
+    }
+    /**/
+    .foot{
+        margin-top: 0
+    }
+</style>
+
+</html>
