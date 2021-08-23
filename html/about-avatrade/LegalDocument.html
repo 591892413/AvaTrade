@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asster/css/bootstrap.css">
+    <link rel="stylesheet" href="../../asster/css/web.css">
+    <link rel="shortcut icon" href="../../asster/icon/favicon.ico">
+    <title>法律文件</title>
+</head>
+
+<body>
+    <div id="head"></div>
+    <div id="sidebar"></div>
+    <div class="bgbar">
+        <div class="bg-img">
+            <img src="../../asster/image/about_us_banner.png" alt="">
+        </div>
+    </div>
+    <div class="minbox d-flex">
+        <div class="left-box">
+            <div class="left-title">
+                关于我们
+            </div>
+            <div class="left-ul">
+                <ul>
+                    <a href="AboutUs.html">
+                        <li class="li-a">关于AvaTrade</li>
+                    </a>
+                    <a href="management.html">
+                        <li class="li-a">管理层介绍</li>
+                    </a>
+                    <a href="LegalDocument.html">
+                        <li class="li-a li-active">法律文件</li>
+                    </a>
+                    <a href="ContactUs.html">
+                        <li class="li-a">联系我们</li>
+                    </a>
+                    <a href="faq.html">
+                        <li class="li-a">常见问题</li>
+                    </a>
+                    <a href="awards.html">
+                        <li class="li-a">资质荣誉</li>
+                    </a>
+                    <a href="announcement.html">
+                        <li class="li-a">公告通知</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="left-adv">
+                <a href="#" class="left-adv-a"><img src="../../asster/image/real-account.png" alt=""></a>
+                <a href="#" class="left-adv-b"><img src="../../asster/image/demo-account.png" alt=""></a>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="bread d-flex">
+                <div class="bread-left" style="font-size: 24px;">法律文件</div>
+                <div class="bread-right">
+                    <div class="bread-img">
+                        <img src="../../asster/icon/page_right_common.png" alt="">
+                        <span><a href="../views/index.html">首页</a></span>
+                        <span> → </span>
+                        <span><a href="AboutUs.html">关于我们</a></span>
+                        <span> → </span>
+                        <span><a href="LegalDocument.html">法律文件</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="all mt-4">
+                <div class="d-flex justify-content-between list-a">
+                    <span>条款与条件</span>
+                    <a href="../../asster/pdf/en-China.pdf">点击查看</a>
+                </div>
+                <div class="mt- d-flex justify-content-between list-a">
+                    <span>风险披露声明</span>
+                    <a href="../../asster/pdf/en-China2.pdf">点击查看</a>
+                </div>
+                <div class="mt-2 d-flex justify-content-between list-a">
+                    <span>使用条款</span>
+                    <a href="../../asster/pdf/en.pdf">点击查看</a>
+                </div>
+                <div class="mt-2 d-flex justify-content-between list-a">
+                    <span>隐私条款</span>
+                    <a href="../../asster/pdf/en4.pdf">点击查看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../../asster/js/jquery-3.5.1.min.js"></script>
+    <script src="../../asster/js/jquery.i18n.js"></script>
+    <script src="../../asster/js/bootstrap.js"></script>
+    <script src="../../asster/js/index.js"></script>
+    <script>
+        $(function () {
+            $('#head').load('../component/NavBar.html', function () {
+                let headSrc = document.createElement("script");
+                headSrc.src = "../../asster/js/bootstrap.js";
+                $('body').append(headSrc)
+            });
+        });
+        $(function () {
+            $('#footer').load('../component/Footer.html');
+        });
+        $(function () {
+            $('#sidebar').load('../component/sidebar.html');
+        });
+    </script>
+</body>
+<style>
+    .right-box {
+        color: #666666;
+    }
+    /**/
+    .list-a{
+        border-bottom: 1px solid #343434;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .list-a a{
+        color: #0000ee
+    }
+</style>
+
+</html>
