@@ -54,11 +54,13 @@
             <div class="a-title">报名参课</div>
             <div class="mt-3">
                 <span>姓名</span>
-                <input type="text">
+                <input id="name" type="text">
+                <div class="checkExistRong" id="checkExistname"></div>
             </div>
             <div class="mt-3">
                 <span>电话</span>
-                <input type="text">
+                <input id="telephone" type="text">
+                <div class="checkExistRong" id="checkExistPhone"></div>
             </div>
             <div class="mt-3 d-flex">
                 <span>验证码</span>
@@ -69,7 +71,8 @@
             </div>
             <div class="mt-3">
                 <span>邮箱</span>
-                <input type="text">
+                <input id="identity" type="text" name="fname" maxlength="30">
+                <div class="checkExistRong" id="checkExistID"></div>
             </div>
             <div class="or-button">
                 <a href="#">点击报名</a>
@@ -84,7 +87,8 @@
             <div class="a-title">免责声明</div>
             <ul>
                 <li><span>本网络研讨会中披露的任何资本市场和交易信息仅供参考，不应被解释或应用为投资建议、推荐或建议</span></li>
-                <li><span>差价合约是复杂的金融产品，由于杠杆作用而导致存在快速亏损的高风险。71%的散户投资者在与该经纪商进行差价合约交易时会出现账<br>户亏损。您应该考虑是否了解差价合约的运作方式，以及您是否有能力承担蒙受损失的高风险</span></li>
+                <li><span>差价合约是复杂的金融产品，由于杠杆作用而导致存在快速亏损的高风险。71%的散户投资者在与该经纪商进行差价合约交易时会出现账<br>户亏损。您应该考虑是否了解差价合约的运作方式，以及您是否有能力承担蒙受损失的高风险</span>
+                </li>
                 <li><span>请在www.avatrade.cn官方网站上阅读我们的完整风险披露声明</span></li>
                 <li>
                     <span>
@@ -120,46 +124,124 @@
         $(function () {
             $('#sidebar').load('../component/sidebar.html');
         });
+        /*姓名身份证，手机号提交*/
+        function isChinaName(name) {
+            var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
+            return pattern.test(name);
+        }
+
+
+        // 验证身份证
+        function isCardNo(card) {
+            var pattern = /^([a-zA-Z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
+            return pattern.test(card);
+        }
+
+        // 验证手机号
+        function isPhoneNo(phone) {
+            var pattern = /^1[34578]\d{9}$/;
+            return pattern.test(phone);
+        }
+
+        /*用户名判断*/
+        function userName(inputid, spanid) {
+            $(inputid).blur(function () {
+                if ($.trim($(inputid).val()).length == 0) {
+                    $(spanid).html("× 名称没有输入");
+                } else {
+                    if (isChinaName($.trim($(inputid).val())) == false) {
+                        $(spanid).html("× 名称不合法");
+                    }
+                }
+            });
+            $(inputid).focus(function () {
+                $(spanid).html("");
+            });
+
+        };
+        userName('#name', "#checkExistname");
+        /*身份证判断*/
+        function userID(inputid, spanid) {
+            $(inputid).blur(function () {
+                if ($.trim($(inputid).val()).length == 0) {
+                    $(spanid).html("× 邮箱没有输入");
+                } else {
+                    if (isCardNo($.trim($(inputid).val())) == false) {
+                        $(spanid).html("× 邮箱不正确");
+                    }
+                }
+            });
+            $(inputid).focus(function () {
+                $(spanid).html("");
+            });
+        };
+        userID('#identity', "#checkExistID");
+
+        /*手机号判断*/
+        function userTel(inputid, spanid) {
+            $(inputid).blur(function () {
+                if ($.trim($(inputid).val()).length == 0) {
+                    $(spanid).html("× 手机号没有输入");
+                } else {
+                    if (isPhoneNo($.trim($(inputid).val())) == false) {
+                        $(spanid).html("× 手机号码不正确");
+                    }
+                }
+                $(inputid).focus(function () {
+                    $(spanid).html("");
+                });
+            });
+        };
+        userTel('#telephone', "#checkExistPhone");
     </script>
 </body>
 <style>
     /*topbg*/
-    .topbg{
+    .topbg {
         background: url('../../asster/image/pc-banner-bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         padding: 120px 0;
         color: #2e2e2e;
     }
-    .topbg-main{
+
+    .topbg-main {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
     }
-    .topbg-title2{
+
+    .topbg-title2 {
         padding: 60px 0;
         font-size: 24px;
     }
-    .topbg-imglist{
+
+    .topbg-imglist {
         margin-right: 40px;
     }
-    .f-14{
+
+    .f-14 {
         font-size: 14px;
     }
-    .topbg-imglist img{
+
+    .topbg-imglist img {
         margin-bottom: 10px;
     }
+
     /*half*/
-    .a-title{
+    .a-title {
         font-size: 24px;
     }
-    .half-left{
+
+    .half-left {
         padding-right: 175px;
     }
-    .half-right span{
+
+    .half-right span {
         margin-right: 30px;
     }
-    .half-right input{
+
+    .half-right input {
         outline: none;
         width: 400px;
         padding-left: 12px;
@@ -167,19 +249,23 @@
         border: 1px solid #e5e5e5;
         border-radius: 5px;
     }
-    .code{
+
+    .code {
         border: 1px solid #e5e5e5;
         border-radius: 5px;
     }
-    .code input{
+
+    .code input {
         width: 250px;
         border: none;
     }
-    .d-flex span{
+
+    .d-flex span {
         margin-right: 18px;
         line-height: 40px
     }
-    .code a{
+
+    .code a {
         width: 150px;
         text-align: center;
         line-height: 40px;
@@ -187,10 +273,12 @@
         cursor: pointer;
         border-left: 2px solid #e5e5e5
     }
-    .code a:hover{
+
+    .code a:hover {
         text-decoration: none;
     }
-    .or-button a{
+
+    .or-button a {
         display: block;
         padding: 8px 24px 0;
         height: 40px;
@@ -201,22 +289,27 @@
         color: #fff;
         text-align: center;
     }
-    .or-button a:hover{
+
+    .or-button a:hover {
         text-decoration: none;
     }
+
     /*bot*/
-    .bot-section{
+    .bot-section {
         background: #f4fcff;
         padding: 1px 0;
     }
-    .bot-section ul{
+
+    .bot-section ul {
         padding-left: 20px;
     }
-    .bot-section li{
+
+    .bot-section li {
         margin-bottom: 30px
     }
+
     /**/
-    .foot{
+    .foot {
         margin-top: 0
     }
 </style>
