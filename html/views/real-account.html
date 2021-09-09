@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../asster/css/bootstrap.css">
+		<link rel="stylesheet" href="../../asster/css/web.css">
+        <link rel="shortcut icon" href="../../asster/icon/favicon.ico">
+		<title>外汇</title>
+	</head>
+	<body>
+		<div id="head"></div>
+		<div id="sidebar"></div>
+		<div class="minbox">
+            <div class="bigbox">
+                <div class="middle-title">注册真实账户</div>
+                <div class="textlist d-flex flex-wrap">
+                    <div class="text-list">
+                        <img src="../../asster/icon/zhegou.png" alt="">
+                        <span>十五年欧洲老牌经纪商，在线交易行业引领者</span>
+                    </div>
+                    <div class="text-list">
+                        <img src="../../asster/icon/zhegou.png" alt="">
+                        <span>多重监管，客户资金隔离存放</span>
+                    </div>
+                    <div class="text-list">
+                        <img src="../../asster/icon/zhegou.png" alt="">
+                        <span>具有竞争力的点差，提供ECN零点差</span>
+                    </div>
+                    <div class="text-list">
+                        <img src="../../asster/icon/zhegou.png" alt="">
+                        <span>杠杆灵活，高达400:1</span>
+                    </div>
+                    <div class="text-list">
+                        <img src="../../asster/icon/zhegou.png" alt="">
+                        <span>产品丰富，超1000种以上交易产品</span>
+                    </div>
+                    <div class="text-list">
+                        <img src="../../asster/icon/zhegou.png" alt="">
+                        <span>5x24小时多语种专业客服</span>
+                    </div>
+                </div>
+                <div class="brand mt-3">5分钟完成真实账户注册，0佣金体验低点差高效执行的交易平台，免费下载MT4/MT5平台</div>
+                <div id="app">
+                    <div class="w-4/5 xl:w-auto mx-auto xl:mx-0 xl:pl-100px">
+                        <real-account loading-class=" h-64"></real-account>
+                    </div>  
+                </div>
+            </div>
+        </div>
+		<div id="footer"></div>
+	</body>
+	<script src="../../asster/js/jquery-3.5.1.min.js"></script>
+	<script src="../../asster/js/jquery.i18n.js"></script>
+	<script src="../../asster/js/bootstrap.js"></script>
+	<script src="../../asster/js/index.js"></script>
+	<script>
+		$(function(){
+			$('#head').load('../component/NavBar.html', function () {
+				let headSrc = document.createElement("script");
+				headSrc.src = "../../asster/js/bootstrap.js";
+				$('body').append(headSrc)
+			});
+		});
+		$(function(){
+			$('#footer').load('../component/Footer.html');
+		});
+		$(function(){
+			$('#sidebar').load('../component/sidebar.html');
+        });
+        window.AVA = {
+			"api_url": "https:\/\/www.avatrade.cn"
+		}
+	</script>
+    <script src="../../asster/js/app1.js"></script>
+	<style>
+        .bigbox{
+            padding-left: 144px;
+            border: 1px solid #e2e8f0;
+        }
+        .textlist{
+            width: 1000px;
+        }
+		.text-list{
+            width:40%;
+            color: #da9a18;
+            font-weight: bold;
+            margin-right: 100px;
+        }
+        .brand{
+            color: #865151;
+            font-weight: bold;
+        }
+	</style>
+</html>

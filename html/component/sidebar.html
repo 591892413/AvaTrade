@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="sidebar">
-			<div class="sidebar-list guanli" style="background-color:#2058a8;border-top-left-radius: 5px;">
+			<div class="sidebar-list guanli h-80" style="background-color:#2058a8;border-top-left-radius: 5px;">
 				<img src="../../asster/icon/asidebutton_daili1.png" alt="">
 			</div>
 			<div class="daili-box">
@@ -43,10 +43,12 @@
 				</div>
 			</div>
 			<div class="sidebar-list">
-				<div class="sidebar-img">
-					<img src="../../asster/icon/qq.png" alt="">
-				</div>
-				QQ客服
+				<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODE5MjcwN180Nzc3MzZfNDAwMDUwNzI4Ml8yXw" target="_blank">
+					<div class="sidebar-img">
+						<img src="../../asster/icon/qq.png" alt="">
+					</div>
+					QQ客服
+				</a>
 			</div>
 			<div class="sidebar-list">
 				<div class="sidebar-img">
@@ -54,13 +56,50 @@
 				</div>
 				在线客服
 			</div>
-			<div class="sidebar-list">
+			<div class="sidebar-list kefu">
 				<div class="sidebar-img">
 					<img src="../../asster/icon/service-call-back.png" alt="">
 				</div>
 				客服回电
 			</div>
-			<div class="sidebar-list">
+			<div class="huidian">
+				<div class="huidian-top">客服回电<div class="x-button">X</div></div>
+				<div class="huidian-main">
+					<div class="huidian-list">
+						<span>姓名</span><text>：</text>
+						<input id="name" type="text">
+					</div>
+					<div class="checkExistRong" id="checkExistname"></div>
+					<div class="huidian-list">
+						<span>手机号码</span><text>：</text>
+						<input id="telephone" type="text">
+					</div>
+					<div class="checkExistRong" id="checkExistPhone"></div>
+					<div class="huidian-list">
+						<span>邮箱</span><text>：</text>
+						<input id="identity" type="text" name="fname" maxlength="30">
+					</div>
+					<div class="checkExistRong" id="checkExistID"></div>
+					<div class="huidian-list">
+						<span>咨询事项</span><text>：</text>
+						<textarea name="" id="" cols="25" rows="3" placeholder="（可选填，100字内）" maxlength="100"></textarea>
+					</div>
+					<div class="huidian-list">
+						<span>已有帐户</span><text>：</text>
+						<form action="" method="get"> 
+							<label><input name="Fruit" type="radio" value="1" />是</label>
+							<label><input name="Fruit" type="radio" value="2" />否</label>
+						</form>
+					</div>
+					<div class="huidian-list haoma">
+						<span>账户号码</span><text>：</text>
+						<input id="num" type="text" name="fname" maxlength="15">
+					</div>
+					<div class="checkExistRong" id="checkNumID"></div>
+					<div class="tijiao">立即提交</div>
+				</div>
+			</div>
+			<div class="sidebar-list pt-2 pb-2 h-80">
 				<p>中文客服</p>
 				<p>在线时间</p>
 				<p>工作日</p>
@@ -84,7 +123,6 @@
 			}).mouseout(function(){
 				$(".daili-box").hide();
 			});
-
 			$(".weixin").mouseover(function(){
 				$(".wechat").show();
 			}).mouseout(function(){
@@ -95,7 +133,124 @@
 			}).mouseout(function(){
 				$(".wechat").hide();
 			})
-			
+			$(".huidian").hide();
+			$(".kefu").click(function(){
+				$(".huidian").show();
+			});
+			$(".x-button").on('click',function(){
+				$(".huidian").hide();
+			});
+			$(".haoma").hide();
+			$("input[type='radio']").click(function(){
+				var val=$('input:radio[name="Fruit"]:checked').val();
+				if(val==1){
+					$(".haoma").show();
+				}else{
+					$(".haoma").hide();
+				}
+			});
+			/*姓名身份证，手机号提交*/
+			function isChinaName(name) {
+            var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
+            return pattern.test(name);
+        }
+
+
+        // 验证身份证
+        function isCardNo(card) {
+            var pattern = /^([a-zA-Z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
+            return pattern.test(card);
+        }
+
+        // 验证手机号
+        function isPhoneNo(phone) {
+            var pattern = /^1[34578]\d{9}$/;
+            return pattern.test(phone);
+        }
+
+        /*用户名判断*/
+        function userName(inputid, spanid) {
+            $(inputid).blur(function () {
+                if ($.trim($(inputid).val()).length == 0) {
+                    $(spanid).html("名称没有输入");
+					$(this).parent().css("margin-bottom","0");
+					$(this).addClass("pink")
+                } else {
+                    if (isChinaName($.trim($(inputid).val())) == false) {
+                        $(spanid).html("名称不合法");
+						$(this).parent().css("margin-bottom","0");
+						$(this).addClass("pink")
+                    }
+                }
+            });
+            $(inputid).focus(function () {
+                $(spanid).html("");
+				$(this).parent().css("margin-bottom","21px");
+				$(this).removeClass("pink")
+            });
+
+        };
+        userName('#name', "#checkExistname");
+        /*身份证判断*/
+        function userID(inputid, spanid) {
+            $(inputid).blur(function () {
+                if ($.trim($(inputid).val()).length == 0) {
+                    $(spanid).html("邮箱没有输入");
+					$(this).parent().css("margin-bottom","0");
+					$(this).addClass("pink")
+                } else {
+                    if (isCardNo($.trim($(inputid).val())) == false) {
+                        $(spanid).html("邮箱不正确");
+						$(this).parent().css("margin-bottom","0");
+						$(this).addClass("pink")
+                    }
+                }
+            });
+            $(inputid).focus(function () {
+                $(spanid).html("");
+				$(this).parent().css("margin-bottom","21px");
+				$(this).removeClass("pink")
+            });
+        };
+        userID('#identity', "#checkExistID");
+
+        /*手机号判断*/
+        function userTel(inputid, spanid) {
+            $(inputid).blur(function () {
+                if ($.trim($(inputid).val()).length == 0) {
+                    $(spanid).html("手机号没有输入");
+					$(this).parent().css("margin-bottom","0");
+					$(this).addClass("pink")
+                } else {
+                    if (isPhoneNo($.trim($(inputid).val())) == false) {
+                        $(spanid).html("手机号码不正确");
+						$(this).parent().css("margin-bottom","0");
+						$(this).addClass("pink")
+                    }
+                }
+                $(inputid).focus(function () {
+                    $(spanid).html("");
+					$(this).parent().css("margin-bottom","21px");
+					$(this).removeClass("pink")
+                });
+            });
+        };
+		userTel('#telephone', "#checkExistPhone");
+		function userNum(inputid, spanid){
+			$(inputid).blur(function () {
+				if($.trim($(inputid).val()).length == 0) {
+					$(spanid).html("交易账户不能为空")
+					$(this).parent().css("margin-bottom","0");
+					$(this).addClass("pink")
+				}
+			})
+			$(inputid).focus(function () {
+                $(spanid).html("");
+				$(this).parent().css("margin-bottom","21px");
+				$(this).removeClass("pink")
+            });
+		};
+        userNum('#num', "#checkNumID");
 		})
 	</script>
 	<style>
@@ -112,13 +267,23 @@
 			border-top-left-radius: 5px;
 		}
 		.sidebar-list{
-			height: 73px;
+			height: 63px;
 			border-bottom: 1px solid #fff;
 			cursor: pointer;
 		}
+		.sidebar-list a{
+			color: #4182be;
+		}
+		.sidebar-list a:hover{
+			color: #4182be;
+			text-decoration: none;
+		}
 		.sidebar-img img{
 			height: 26px;
-			margin:12px 20px 8px;
+			margin:5px 20px 8px;
+		}
+		.h-80{
+			height:80px
 		}
 		.sidebar-list p{
 			margin-bottom: 0px;
@@ -163,7 +328,7 @@
 		.wechat{
 			position:absolute;
 			right:72px;
-			top: 72px;
+			top: 85px;
 			display:none;
 			width: 73px;
 			height: 73px;
@@ -171,6 +336,100 @@
 		.wechat img{
 			width: 73px;
 			height: 73px;
+		}
+		.huidian{
+			position:absolute;
+			right:82px;
+			top: -50px;
+			width: 304px;
+			cursor: default;
+		}
+		.huidian-top{
+			height:43px;
+			line-height:43px;
+			color:#fff;
+			font-size:18px;
+			font-weight: bold;
+			background-color: #2882c0;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		.x-button{
+			color:#fff;
+			width: 20px;
+			font-size: 20px;
+			cursor: pointer;
+			float:right;
+		}
+		.show{
+			display:block;
+		}
+		.huidian-main{
+			text-align:left;
+			padding: 16px 20px 24px;
+			font-size: 14px;
+			color: #333333;
+			background: #fff;
+		}
+		.huidian-list{
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 21px;
+		}
+		.huidian-list input{
+			width: 180px;
+			padding-left: 8px;
+			border-radius: 4px;
+			border: 1px solid #dddddd;
+			line-height: 28px
+		}
+		.huidian-list textarea{
+			padding-left: 8px;
+			border: 1px solid #dddddd;
+		}
+		.huidian-list span{
+			width: 60px;
+			display: inline-block;
+			padding-top: 5px;
+			text-align-last: justify;
+		}
+		.huidian-list text{
+			padding-top: 5px;
+		}
+		.huidian-list form{
+			width: 120px;
+			display: flex;
+			justify-content: space-between;
+			margin-top: 6px;
+		}
+		.huidian-list form input{
+			width: 30px;
+		}
+		.tijiao{
+			width: 180px;
+			height: 28px;
+			margin-left: 75px;
+			color: #fff;
+			font-size: 14px;
+			background: #4182be;
+			line-height: 28px;
+			text-align: center;
+			display: block;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		.checkExistRong{
+			color: #ff5b5b;
+			background-image: url('../../asster/icon/form-error-icon.png');
+			background-position: left;
+    		background-size: 16px 16px;
+    		background-repeat: no-repeat;
+			padding-left: 24px;
+			margin-left: 75px;
+		}
+		.pink{
+			background-color: #fff5f5;
+			border:#feb2b2 1px solid !important;
 		}
 	</style>
 </html>

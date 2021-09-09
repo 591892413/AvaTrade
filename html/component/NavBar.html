@@ -35,7 +35,32 @@
         </li>
       </ul>
       <ul class="loginlist">
-        <li><a href="">登录</a></li>
+        <li><a href="" data-toggle="modal" data-target="#exampleModal">登录</a></li>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title on" id="exampleModalLabel">登录你的账户</h5>
+                <h5 class="modal-title off" id="exampleModalLabel">忘记密码了吗？</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="off mb-2">输入您的下列电子邮件地址，我们会向你发送一封附带链接的电子邮件，以重置您的密码。</div>
+                <input type="text" placeholder="电子邮件">
+                <input type="text" placeholder="密码" class="on">
+              </div>
+              <div class="modal-footer">
+                <div class="blue-button on"><a href="#">登录</a></div>
+                <div class="blue-button off"><a href="#">提交</a></a></div>
+                <a href="#" class="a-link on">忘记密码了吗？</a>
+                <a href="#" class="a-link off">取消</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="display:inline-block;width:1px;height:20px;background-color: #fff;"></div>
         <li class="signin">
           <a href="#" style="color:#EB9C0B">
@@ -43,10 +68,10 @@
           </a>
           <div class="signbig">
             <div class="signtop">
-              开立真实账户
+              <a href="../views/real-account.html">开立真实账户</a>
             </div>
             <div class="signbot">
-              注册模拟账户
+              <a href="../views/demo-account.html">注册模拟账户</a>
             </div>
           </div>
         </li>
@@ -65,25 +90,25 @@
           <a class="nav-link" href="../views/index.html"><img src="../../asster/image/logo.png" alt=""> <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link avaon" href="#">AVA优势 <span class="sr-only">(current)</span></a>
+          <a class="nav-link avaon" href="../ava/Avaadvantage.html">AVA优势 <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link pingtaion" href="#">交易平台<span class="sr-only">(current)</span></a>
+          <a class="nav-link pingtaion" href="../platform/trading-platform.html">交易平台<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link chanpinon" href="#">交易产品<span class="sr-only">(current)</span></a>
+          <a class="nav-link chanpinon" href="../product/range-of-markets.html">交易产品<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link xinxion" href="#">交易信息<span class="sr-only">(current)</span></a>
+          <a class="nav-link xinxion" href="../trading/trading-conditions.html">交易信息<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link hezuoon" href="#">代理合作</span><span class="sr-only">(current)</span></a>
+          <a class="nav-link hezuoon" href="../views/IB-register.html">代理合作</span><span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link zhongxinon" href="../education/eduresource.html">学习中心<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link womenon" href="#">关于我们<span class="sr-only">(current)</span></a>
+          <a class="nav-link womenon" href="../about-avatrade/AboutUs.html">关于我们<span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
@@ -104,7 +129,6 @@
           <li><a href="../ava/safetyoffunds.html">资金安全</a></li>
           <li><a href="../ava/Avaadvantage.html">AVA优势特点</a></li>
           <li><a href="../ava/avasocial.html">AvaSocial</a></li>
-          <li><a href="">至尊之战</a></li>
         </ul>
       </div>
       </ul>
@@ -145,12 +169,12 @@
         <ul class="down-menu">
           <li><a href="../product/range-of-markets.html">产品综述</a></li>
           <li><a href="../views/commodities.html">大宗商品</a></li>
-          <li><a href="">股指</a></li>
+          <li><a href="../views/indices.html">股指</a></li>
         </ul>
         <ul class="down-menu">
-          <li><a href="">外汇交易</a></li>
-          <li><a href="">股票</a></li>
-          <li><a href="">差价合约</a></li>
+          <li><a href="../views/forex.html">外汇交易</a></li>
+          <li><a href="../views/stock.html">股票</a></li>
+          <li><a href="../cfd/CFD.html">差价合约</a></li>
         </ul>
       </div>
       </ul>
@@ -164,10 +188,10 @@
       <div class="down-right">
         <ul class="down-menu">
           <li><a href="../trading/trading-conditions.html">交易条款</a></li>
-          <li><a href="">交易时间</a></li>
+          <li><a href="../trading/holiday-trading-hours.html">交易时间</a></li>
         </ul>
         <ul class="down-menu">
-          <li><a href="">差价合约展期</a></li>
+          <li><a href="../trading/cfd-rollover.html">差价合约展期</a></li>
           <li><a href="">金融索引工具</a></li>
         </ul>
       </div>
@@ -199,16 +223,16 @@
       <div class="down-right">
         <ul class="down-menu">
           <li><a href="">视频教程</a></li>
-          <li><a href="">外汇电子书</a></li>
-          <li><a href="">外汇术语</a></li>
-          <li><a href="">订单类型</a></li> 
-          <li><a href="">专业交易策略</a></li>
+          <li><a href="../education/education.html">外汇电子书</a></li>
+          <li><a href="../education/glossary.html">外汇术语</a></li>
+          <li><a href="../education/order-types.html">订单类型</a></li> 
+          <li><a href="../education/jiaoyicelue.html">专业交易策略</a></li>
         </ul>
         <ul class="down-menu">
           <li><a href="../education/webinar.html">在线课堂</a></li>
           <li><a href="../education/economic-indicators_intro.html">经济指标</a></li>
-          <li><a href="">交易新手入门</a></li>
-          <li><a href="">外汇行情动态</a></li>
+          <li><a href="../beginners/trading-for-beginners.html">交易新手入门</a></li>
+          <li><a href="../education/techinicalanalysis.html">外汇行情动态</a></li>
         </ul>
       </div>
       </ul>
@@ -416,6 +440,14 @@
         $(".signbig").hide();
       })
     })
+    /*登录*/
+    $(function(){
+      $(".off").hide();
+      $(".a-link").click(function(){
+        $(".on").toggle();
+        $(".off").toggle();
+      })
+    })
   </script>
 </body>
 <style>
@@ -536,6 +568,61 @@
   }
   .signbot:hover{
     cursor:pointer
+  }
+  /*sign*/
+  .modal-backdrop{
+    background-color: rgb(0,0,0,0.5) !important;
+  }
+  .modal-dialog{
+    max-width: 370px !important;
+  }
+  .modal-header .close{
+    outline:none;
+  }
+  .modal-body input{
+    width: 330px;
+    height: 45px;
+    padding: 6px 8px;
+    margin-bottom: 10px;
+    outline-color: #66AFE9;
+  }
+  .modal-header,.modal-body,.modal-footer{
+    padding: 20px !important
+  }
+  .modal-footer{
+    border-top: 0px !important;
+  }
+  .modal-footer > *{
+    margin: 0 !important
+  }
+  .blue-button a{
+    width: 330px;
+    height: 54px;
+    line-height: 54px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #2882c0;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .signbot a{
+    color: #000 !important;
+  }
+  .blue-button a:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+  .a-link{
+    text-decoration: underline #333;
+    color: #333;
+    text-align: center;
+    display: block;
+    width: 100%
+  }
+  .a-link:hover{
+    color: #333;
   }
 </style>
 </html>
